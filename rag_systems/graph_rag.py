@@ -127,8 +127,14 @@ class GraphRAG(BaseRAG):
                 # Add node if not exists
                 if not self.graph.has_node(entity):
                     self.graph.add_node(entity, chunks=[], freq=0)
-                self.graph.nodes[entity]["chunks"].append(chunk_id)
-                self.graph.nodes[entity]["freq"] += 1
+                # Guard: networkx add_edge() creates nodes implicitly without
+                # our custom attrs — ensure they exist before appending.
+                node = self.graph.nodes[entity]
+                if "chunks" not in node:
+                    node["chunks"] = []
+                    node["freq"] = 0
+                node["chunks"].append(chunk_id)
+                node["freq"] += 1
                 self.entity_to_chunks[entity].append(chunk_id)
 
                 # Add co-occurrence edges between entities in same chunk

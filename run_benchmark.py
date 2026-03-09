@@ -59,6 +59,19 @@ def get_git_hash() -> str:
         return "unknown"
 
 
+def find_completed_run(arch: str, dataset: str) -> dict | None:
+    """
+    Return the result dict if this (arch × dataset) combination was already run,
+    otherwise return None.  Uses the most recent matching file when duplicates exist.
+    """
+    results_dir = RESULTS_DIR / "benchmark_tables"
+    matches = sorted(results_dir.glob(f"run_*_{arch}_{dataset}.json"))
+    if matches:
+        with open(matches[-1]) as f:
+            return json.load(f)
+    return None
+
+
 def run_experiment(
     arch_name: str,
     dataset_name: str,
@@ -232,6 +245,14 @@ def main():
 
     all_results = []
     for arch, dataset in experiments:
+        # ── Checkpoint: skip if this combination already has a saved result ──
+        completed = find_completed_run(arch, dataset)
+        if completed:
+            print(f"\n[checkpoint] ✓ {arch.upper()} × {dataset.upper()} already "
+                  f"completed (RUN-{completed['run_id']:03d}) — skipping")
+            all_results.append(completed)
+            continue
+
         result = run_experiment(arch, dataset, run_id, dry_run=args.dry_run)
         all_results.append(result)
         run_id += 1
