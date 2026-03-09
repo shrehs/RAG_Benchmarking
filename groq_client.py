@@ -61,14 +61,16 @@ def get_langchain_llm(model: str = None):
     Returns a LangChain-compatible Groq LLM for RAGAS evaluation.
     Requires langchain-groq: pip install langchain-groq
 
-    Groq rejects requests with n > 1 (only 1 completion per request allowed).
-    RAGAS faithfulness metric internally sends n > 1, so we strip it.
+    Groq only allows n=1 per request. RAGAS faithfulness passes n=k (number of
+    NLI statements) to get k verdicts in one shot. We handle this by making k
+    sequential calls and combining the results into a single LLMResult — same
+    shape as if n=k had worked.
     """
     from config import LLM_MODEL
     from langchain_groq import ChatGroq
 
     class _GroqNoN(ChatGroq):
-        """Strip n parameter before every call — Groq only allows n=1."""
+        """Simulate n > 1 via sequential calls — Groq only allows n=1."""
 
         @property
         def _default_params(self):
@@ -84,9 +86,35 @@ def get_langchain_llm(model: str = None):
             kwargs.pop("n", None)
             return await super()._agenerate(messages, stop=stop, run_manager=run_manager, **kwargs)
 
+        async def agenerate(self, messages, stop=None, callbacks=None, **kwargs):
+            from langchain_core.outputs import LLMResult
+            import asyncio
+
+            n = kwargs.pop("n", 1)
+            if n <= 1:
+                return await super().agenerate(
+                    messages, stop=stop, callbacks=callbacks, **kwargs
+                )
+
+            # Groq rejects n > 1 — simulate with n sequential single calls
+            results = []
+            for _ in range(n):
+                r = await super().agenerate(
+                    messages, stop=stop, callbacks=None, **kwargs
+                )
+                results.append(r)
+                await asyncio.sleep(0.1)   # small pause to respect rate limits
+
+            # Combine: generations[i] should be a list of n ChatGenerations
+            combined = [
+                [r.generations[i][0] for r in results]
+                for i in range(len(messages))
+            ]
+            return LLMResult(generations=combined)
+
     return _GroqNoN(
         model=model or LLM_MODEL,
         temperature=0,
         api_key=GROQ_API_KEY,
-        n=1,   # also set at class level as a safeguard
+        n=1,
     )
