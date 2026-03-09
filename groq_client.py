@@ -91,19 +91,32 @@ def get_langchain_llm(model: str = None):
             import asyncio
 
             n = kwargs.pop("n", 1)
+
+            async def _single_call():
+                """One agenerate call with simple 429 retry."""
+                for attempt in range(5):
+                    try:
+                        return await super(_GroqNoN, self).agenerate(
+                            messages, stop=stop, callbacks=None, **kwargs
+                        )
+                    except Exception as e:
+                        if "429" in str(e) or "rate_limit" in str(e).lower():
+                            wait = 30 * (attempt + 1)
+                            print(f"[groq] 429 rate limit — retrying in {wait}s...")
+                            await asyncio.sleep(wait)
+                        else:
+                            raise
+                raise RuntimeError("Groq 429: exceeded max retries")
+
             if n <= 1:
-                return await super().agenerate(
-                    messages, stop=stop, callbacks=callbacks, **kwargs
-                )
+                return await _single_call()
 
             # Groq rejects n > 1 — simulate with n sequential single calls
             results = []
             for _ in range(n):
-                r = await super().agenerate(
-                    messages, stop=stop, callbacks=None, **kwargs
-                )
+                r = await _single_call()
                 results.append(r)
-                await asyncio.sleep(0.1)   # small pause to respect rate limits
+                await asyncio.sleep(0.2)
 
             # Combine: generations[i] should be a list of n ChatGenerations
             combined = [
