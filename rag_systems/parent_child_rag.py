@@ -33,7 +33,7 @@ from config import (
     CHILD_CHUNK_SIZE, PARENT_CHUNK_SIZE,
     TOP_K,
 )
-from gemini_client import GeminiClient
+from groq_client import GroqClient
 from local_client import LocalEmbedder
 from rag_systems.base_rag import BaseRAG, Document
 from rag_systems.chunker import split_text_into_chunks
@@ -50,7 +50,7 @@ class ParentChildRAG(BaseRAG):
 
     def __init__(self):
         super().__init__("Parent-Child RAG")
-        self.client = GeminiClient()
+        self.client = GroqClient()
         self.embedder = LocalEmbedder()
         self.faiss_index = None
         self.child_chunks: list[dict] = []    # used for retrieval

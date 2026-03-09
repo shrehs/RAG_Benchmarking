@@ -1,9 +1,9 @@
 # Core
 python-dotenv>=1.0.0
 
-# Gemini API (D-016) — generator, judge, and embeddings
-google-genai>=0.8.0
-langchain-google-genai>=2.0.0
+# Groq API (D-016) — generator and judge LLM
+groq>=0.9.0
+langchain-groq>=0.1.0
 langchain>=0.1.0
 langchain-community>=0.0.10
 

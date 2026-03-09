@@ -30,7 +30,7 @@ from config import (
     EMBEDDING_DIMS, CHUNK_SIZE, CHUNK_OVERLAP,
     TOP_K, HYBRID_ALPHA,
 )
-from gemini_client import GeminiClient
+from groq_client import GroqClient
 from local_client import LocalEmbedder
 from rag_systems.base_rag import BaseRAG, Document
 from rag_systems.chunker import chunk_documents
@@ -49,7 +49,7 @@ class HybridRAG(BaseRAG):
     def __init__(self, alpha: float = HYBRID_ALPHA):
         super().__init__("Hybrid RAG")
         self.alpha = alpha   # D-007: 0.5 = equal weight
-        self.client = GeminiClient()
+        self.client = GroqClient()
         self.embedder = LocalEmbedder()
         self.faiss_index = None
         self.bm25 = None

@@ -35,7 +35,7 @@ from config import (
     SPACY_MODEL, GRAPH_HOP_DEPTH, MIN_ENTITY_FREQ,
     TOP_K, CHUNK_SIZE, CHUNK_OVERLAP,
 )
-from gemini_client import GeminiClient
+from groq_client import GroqClient
 from rag_systems.base_rag import BaseRAG, Document
 from rag_systems.chunker import chunk_documents
 
@@ -71,7 +71,7 @@ class GraphRAG(BaseRAG):
 
     def __init__(self):
         super().__init__("Graph RAG")
-        self.client = GeminiClient()   # D-016: LLM generation via Gemini
+        self.client = GroqClient()   # D-016: LLM generation via Groq
         self.graph = nx.Graph()
         self.chunks: list[dict] = []
         self.chunk_map: dict[str, dict] = {}   # chunk_id → chunk

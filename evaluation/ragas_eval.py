@@ -50,7 +50,7 @@ def evaluate_rag(
         from ragas import evaluate, RunConfig
         from ragas.metrics import faithfulness, answer_relevancy
         from datasets import Dataset
-        from gemini_client import get_langchain_llm
+        from groq_client import get_langchain_llm
         from local_client import get_langchain_embeddings
     except ImportError as e:
         print(f"[ragas_eval] RAGAS dependencies not installed: {e}")
@@ -86,7 +86,7 @@ def evaluate_rag(
         "ground_truth": ground_truths,
     })
 
-    # Gemini judge (D-002: stronger than generator) + local bge-large-en-v1.5 embeddings
+    # Groq judge (D-002: llama-3.3-70b, stronger than generator) + local bge-large-en-v1.5 embeddings
     judge_llm = get_langchain_llm(JUDGE_MODEL)
     judge_embeddings = get_langchain_embeddings()
 
@@ -126,7 +126,7 @@ def generate_qa_pairs(
         from ragas.testset import TestsetGenerator
         from ragas.testset.evolutions import simple, multi_context, reasoning
         from langchain.schema import Document as LCDocument
-        from gemini_client import get_langchain_llm
+        from groq_client import get_langchain_llm
         from local_client import get_langchain_embeddings
 
         print(f"[ragas_eval] Generating {n} QA pairs for {dataset_name}...")

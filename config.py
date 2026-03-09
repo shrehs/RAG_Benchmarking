@@ -17,12 +17,13 @@ RESULTS_DIR = ROOT / "results"
 LOGS_DIR = ROOT / "logs"
 
 # ─── LLM (D-001: Frozen across all architectures) ─────────────────────────────
-# Generator: Gemini 2.0 Flash (fast, cheap) — D-016
-# Judge:     Gemini 1.5 Pro (stronger than flash, avoids self-eval bias) — D-002
-LLM_MODEL = "gemini-2.0-flash"     # D-001: frozen generator
-LLM_TEMPERATURE = 0                 # D-001: deterministic for reproducibility
+# Generator: llama-3.1-8b-instant via Groq (fast, free 14K req/day) — D-016
+# Judge:     llama-3.3-70b-versatile via Groq (stronger than generator) — D-002
+LLM_MODEL = "llama-3.1-8b-instant"        # D-001: frozen generator
+LLM_TEMPERATURE = 0                        # D-001: deterministic for reproducibility
 LLM_MAX_TOKENS = 512
-JUDGE_MODEL = "gemini-1.5-pro"    # D-002: stronger than generator to avoid self-eval bias
+JUDGE_MODEL = "llama-3.3-70b-versatile"   # D-002: stronger than generator to avoid self-eval bias
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
