@@ -263,7 +263,7 @@ class GraphRAG(BaseRAG):
             chunk_words = set(chunk["content"].lower().split())
             score = len(query_words & chunk_words) / (len(query_words) + 1e-9)
             scored.append((score, chunk))
-        scored.sort(reverse=True)
+        scored.sort(key=lambda x: x[0], reverse=True)
         return [
             Document(
                 content=c["content"],
