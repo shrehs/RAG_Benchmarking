@@ -60,11 +60,33 @@ def get_langchain_llm(model: str = None):
     """
     Returns a LangChain-compatible Groq LLM for RAGAS evaluation.
     Requires langchain-groq: pip install langchain-groq
+
+    Groq rejects requests with n > 1 (only 1 completion per request allowed).
+    RAGAS faithfulness metric internally sends n > 1, so we strip it.
     """
     from config import LLM_MODEL
     from langchain_groq import ChatGroq
-    return ChatGroq(
+
+    class _GroqNoN(ChatGroq):
+        """Strip n parameter before every call — Groq only allows n=1."""
+
+        @property
+        def _default_params(self):
+            params = super()._default_params
+            params.pop("n", None)
+            return params
+
+        def _generate(self, messages, stop=None, run_manager=None, **kwargs):
+            kwargs.pop("n", None)
+            return super()._generate(messages, stop=stop, run_manager=run_manager, **kwargs)
+
+        async def _agenerate(self, messages, stop=None, run_manager=None, **kwargs):
+            kwargs.pop("n", None)
+            return await super()._agenerate(messages, stop=stop, run_manager=run_manager, **kwargs)
+
+    return _GroqNoN(
         model=model or LLM_MODEL,
         temperature=0,
         api_key=GROQ_API_KEY,
+        n=1,   # also set at class level as a safeguard
     )
