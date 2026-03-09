@@ -1,0 +1,10 @@
+{
+  "name": "medium",
+  "num_documents": 498,
+  "fetched_at": "2026-03-08T14:57:39.566573",
+  "random_seed": 42,
+  "sources": [
+    "arxiv"
+  ],
+  "avg_content_length": 1412
+}
