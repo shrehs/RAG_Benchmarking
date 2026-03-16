@@ -102,8 +102,8 @@ def evaluate_rag(
     raw_scores = df.to_dict(orient="records")
 
     return RAGASResult(
-        faithfulness=float(df["faithfulness"].mean()),
-        answer_relevancy=float(df["answer_relevancy"].mean()),
+        faithfulness=float(df["faithfulness"].mean()) if "faithfulness" in df.columns else 0.0,
+        answer_relevancy=float(df["answer_relevancy"].mean()) if "answer_relevancy" in df.columns else 0.0,
         context_precision=float(df["context_precision"].mean()) if "context_precision" in df.columns else 0.0,
         context_recall=float(df["context_recall"].mean()) if "context_recall" in df.columns else 0.0,
         num_samples=len(qa_pairs),
