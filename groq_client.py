@@ -129,5 +129,6 @@ def get_langchain_llm(model: str = None):
         model=model or LLM_MODEL,
         temperature=0,
         api_key=GROQ_API_KEY,
+        max_tokens=2048,   # faithfulness decomposition and NLI can be verbose
         n=1,
     )

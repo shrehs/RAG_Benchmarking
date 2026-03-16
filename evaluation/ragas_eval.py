@@ -48,7 +48,7 @@ def evaluate_rag(
     """
     try:
         from ragas import evaluate, RunConfig
-        from ragas.metrics import faithfulness, answer_relevancy
+        from ragas.metrics import answer_relevancy
         from datasets import Dataset
         from groq_client import get_langchain_llm
         from local_client import get_langchain_embeddings
@@ -92,7 +92,7 @@ def evaluate_rag(
 
     result = evaluate(
         dataset=eval_dataset,
-        metrics=[faithfulness, answer_relevancy],   # context_precision/recall dropped to halve CPU time
+        metrics=[answer_relevancy],   # faithfulness dropped: requires strict NLI JSON, unreliable with 8b models
         llm=judge_llm,
         embeddings=judge_embeddings,
         run_config=RunConfig(max_workers=1, timeout=600),
