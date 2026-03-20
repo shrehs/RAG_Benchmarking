@@ -77,6 +77,7 @@ def run_experiment(
     dataset_name: str,
     run_id: int,
     dry_run: bool = False,
+    skip_ragas: bool = False,
 ) -> dict:
     """
     Run a single (architecture × dataset) experiment.
@@ -153,30 +154,36 @@ def run_experiment(
         "mrr": retrieval_result.get("mrr", 0),
     }
 
-    # 7. RAGAS quality evaluation
-    print(f"[run] Running RAGAS evaluation...")
-    if dry_run:
+    # 7. RAGAS quality evaluation (optional)
+    if skip_ragas:
+        print(f"[run] Skipping RAGAS evaluation (--no-ragas flag)")
         quality_metrics = {"faithfulness": 0, "answer_relevancy": 0,
                            "context_precision": 0, "context_recall": 0}
         cost = {"embedding": 0, "generation": 0, "eval": 0, "total": 0, "per_query": 0}
     else:
-        ragas_result = evaluate_rag(rag, qa_pairs, k=TOP_K)
-        quality_metrics = {
-            "faithfulness": ragas_result.faithfulness,
-            "answer_relevancy": ragas_result.answer_relevancy,
-            "context_precision": ragas_result.context_precision,
-            "context_recall": ragas_result.context_recall,
-        }
+        print(f"[run] Running RAGAS evaluation...")
+        if dry_run:
+            quality_metrics = {"faithfulness": 0, "answer_relevancy": 0,
+                               "context_precision": 0, "context_recall": 0}
+            cost = {"embedding": 0, "generation": 0, "eval": 0, "total": 0, "per_query": 0}
+        else:
+            ragas_result = evaluate_rag(rag, qa_pairs, k=TOP_K)
+            quality_metrics = {
+                "faithfulness": ragas_result.faithfulness,
+                "answer_relevancy": ragas_result.answer_relevancy,
+                "context_precision": ragas_result.context_precision,
+                "context_recall": ragas_result.context_recall,
+            }
 
-        # Aggregate cost from a sample of full query() calls
-        sample_result = rag.query(queries[0], k=TOP_K)
-        cost_sample = sample_result.cost_usd
-        n_qa = len(qa_pairs)
-        cost = {
-            "embedding": cost_sample["embedding"] * n_qa,
-            "generation": cost_sample["generation"] * n_qa,
-            "eval": 0.0,   # judge cost tracked separately
-            "total": (cost_sample["embedding"] + cost_sample["generation"]) * n_qa,
+            # Aggregate cost from a sample of full query() calls
+            sample_result = rag.query(queries[0], k=TOP_K)
+            cost_sample = sample_result.cost_usd
+            n_qa = len(qa_pairs)
+            cost = {
+                "embedding": cost_sample["embedding"] * n_qa,
+                "generation": cost_sample["generation"] * n_qa,
+                "eval": 0.0,   # judge cost tracked separately
+                "total": (cost_sample["embedding"] + cost_sample["generation"]) * n_qa,
             "per_query": cost_sample["embedding"] + cost_sample["generation"],
         }
 
@@ -194,7 +201,7 @@ def run_experiment(
         git_hash=get_git_hash(),
     )
 
-    print(f"\n[run] ✅ RUN-{run_id:03d} complete")
+    print(f"\n[run] [OK] RUN-{run_id:03d} complete")
     print(f"[run]    Recall@5: {retrieval_metrics['recall_at_5']:.4f}")
     print(f"[run]    P50 Latency: {system_metrics['p50_latency']:.3f}s")
     print(f"[run]    Faithfulness: {quality_metrics['faithfulness']:.4f}")
@@ -219,6 +226,7 @@ def main():
     parser.add_argument("--arch", choices=ARCHITECTURES, help="Architecture to benchmark")
     parser.add_argument("--all", action="store_true", help="Run all arch × dataset combinations")
     parser.add_argument("--dry-run", action="store_true", help="Skip API calls, use stubs")
+    parser.add_argument("--no-ragas", action="store_true", help="Skip RAGAS quality evaluation (retrieval metrics only)")
     args = parser.parse_args()
 
     if not (args.all or args.dataset):
@@ -248,12 +256,12 @@ def main():
         # ── Checkpoint: skip if this combination already has a saved result ──
         completed = find_completed_run(arch, dataset)
         if completed:
-            print(f"\n[checkpoint] ✓ {arch.upper()} × {dataset.upper()} already "
-                  f"completed (RUN-{completed['run_id']:03d}) — skipping")
+            print(f"\n[checkpoint] [OK] {arch.upper()} + {dataset.upper()} already "
+                  f"completed (RUN-{completed['run_id']:03d}) - skipping")
             all_results.append(completed)
             continue
 
-        result = run_experiment(arch, dataset, run_id, dry_run=args.dry_run)
+        result = run_experiment(arch, dataset, run_id, dry_run=args.dry_run, skip_ragas=args.no_ragas)
         all_results.append(result)
         run_id += 1
 
