@@ -6,6 +6,38 @@ Comprehensive benchmarking suite comparing 5 RAG (Retrieval-Augmented Generation
 
 ---
 
+## 🚀 Summary
+
+**The Problem**: How do you choose the right RAG architecture when document sizes range from 5 to 200+ pages?
+
+This project benchmarks 5 RAG systems to answer this question through systematic evaluation, focusing on **what matters most in production**: retrieval performance and system trade-offs.
+
+**Key Results**:
+- **Vector RAG** → Best production default (1.50 recall, 75ms latency) ⭐
+- **Hybrid RAG** → Higher accuracy, slower (1.80 recall, 188ms)
+- **Graph RAG** → Ultra-fast but lower recall (<10ms, 0.80 recall)
+- **Parent-Child RAG** → Hierarchical context for large documents
+- **Multi-Query RAG** → Not recommended (high cost, no benefit)
+
+**Deliverables**: Interactive dashboard, reproducible benchmark suite, architectural analysis, and production deployment guide.
+
+👉 **Start here**: Open `dashboard.html` in your browser for interactive charts
+
+---
+
+## 🌍 Real-World Context
+
+This benchmark reflects practical production constraints:
+
+- **Heterogeneous documents**: Input sizes range from 5 to 200+ pages
+- **Real requirements**: Balance accuracy, latency, and cost simultaneously
+- **Enterprise focus**: Designed for systems like decision tracking and knowledge management where retrieval quality directly impacts business outcomes
+- **Reproducibility**: All evaluations use identical conditions (same LLM, embeddings, chunk size) to isolate architectural impact
+
+This approach mirrors challenges at organizations and enterprises running RAG systems on diverse data.
+
+---
+
 ## 🎯 Quick Start
 
 ### View Results (3 Options)
@@ -84,6 +116,20 @@ results/
 | **Multi-Query RAG** | 3 LLM sub-queries + merged retrieval | ❌ Not recommended (no benefit) |
 
 **Implementation Files**: `rag_systems/vector_rag.py`, `hybrid_rag.py`, `graph_rag.py`, etc.
+
+---
+
+## 🧭 When to Use Which Architecture
+
+| Use Case | Recommended Architecture | Rationale |
+|----------|------------------------|-----------|
+| General production (balanced) | **Vector RAG** | Optimal balance of recall, latency, and simplicity |
+| High accuracy needed | **Hybrid RAG** | 20% higher recall, acceptable latency trade-off |
+| Real-time constraints (<10ms) | **Graph RAG** | Pre-computed graph enables sub-10ms queries |
+| Very large documents (>10K tokens) | **Parent-Child RAG** | Hierarchical chunking preserves context |
+| ❌ Avoid | **Multi-Query RAG** | 9× slower with no measurable recall improvement |
+
+See the **Decision Tree** section for detailed decision logic.
 
 ---
 
@@ -367,6 +413,20 @@ rag.index(documents)
 
 ---
 
+## ⚙️ Production Considerations
+
+When deploying RAG systems in real environments, architecture choices must account for constraints beyond raw performance:
+
+- **Data quality drives results more than model choice** — Clean, well-chunked documents matter more than LLM version
+- **Latency constraints are architectural** — Real-time applications (<10ms) require graph-based approaches; acceptable latency (50-200ms) enables vector/hybrid solutions
+- **Cost scales with query volume** — LLM calls dominate costs, not retrieval; caching embeddings recovers most savings
+- **Embedding storage strategy impacts retrieval** — Index size, dimensionality, and update frequency have downstream effects on deployment
+- **Evaluation on real user queries is critical** — Synthetic benchmarks (like this one) establish baselines; production validation on actual query logs is mandatory
+
+**Key Insight**: This project optimizes for retrieval metrics as a proxy for system effectiveness. Always validate on your specific dataset and query patterns before production deployment.
+
+---
+
 ## 📚 Project Structure
 
 ```
@@ -445,7 +505,17 @@ A: When 20% recall improvement justifies 2-3× latency trade-off for your use ca
 
 ---
 
-**Last Updated**: 2026-03-20
+## 👩‍💻 Author Note
+
+This project reflects my interest in building production-grade AI systems, with a focus on retrieval pipelines, system benchmarking, and architecture trade-off analysis.
+
+Built with systematic evaluation in mind: controlled variables, reproducible pipelines, and honest documentation of limitations.
+
+Always open to discussions around RAG systems, data engineering, and AI infrastructure.
+
+---
+
+**Last Updated**: 2026-03-21
 **Status**: ✅ All results available | Tested on 3 datasets | 5 architectures | Production-ready analysis
 
 Questions? See `BENCHMARK_REPORT.md` or open `dashboard.html` in your browser.
