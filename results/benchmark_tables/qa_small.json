@@ -1,202 +1,402 @@
 [
   {
     "question": "What does the source say about: \" Broad network access: \"Capabilities are?",
-    "ground_truth": "\"\nBroad network access: \"Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e"
+    "ground_truth": "\"\nBroad network access: \"Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e",
+    "source": "wikipedia:Cloud computing",
+    "relevant_sources": [
+      "wikipedia:Cloud computing"
+    ]
   },
   {
     "question": "What does the source say about: Bidirectional encoder representations from transformers (BERT)?",
-    "ground_truth": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google"
+    "ground_truth": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google",
+    "source": "wikipedia:BERT (language model)",
+    "relevant_sources": [
+      "wikipedia:BERT (language model)"
+    ]
   },
   {
     "question": "What does the source say about: Some common deep learning network architectures?",
-    "ground_truth": "Some common deep learning network architectures include fully connected networks, deep belief networks, recurrent neural networks, convolutional neural networks, generative adversarial networks, transformers, and neural radiance fields"
+    "ground_truth": "Some common deep learning network architectures include fully connected networks, deep belief networks, recurrent neural networks, convolutional neural networks, generative adversarial networks, transformers, and neural radiance fields",
+    "source": "wikipedia:Deep learning",
+    "relevant_sources": [
+      "wikipedia:Deep learning"
+    ]
   },
   {
     "question": "What does the source say about: For regression tasks, the output is?",
-    "ground_truth": "For regression tasks, the output is the average of the predictions of the trees"
+    "ground_truth": "For regression tasks, the output is the average of the predictions of the trees",
+    "source": "wikipedia:Random forest",
+    "relevant_sources": [
+      "wikipedia:Random forest"
+    ]
   },
   {
     "question": "What does the source say about: For example, a GAN trained on?",
-    "ground_truth": "For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics"
+    "ground_truth": "For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics",
+    "source": "wikipedia:Generative adversarial network",
+    "relevant_sources": [
+      "wikipedia:Generative adversarial network"
+    ]
   },
   {
     "question": "What does the source say about: This topic is related to the?",
-    "ground_truth": "This topic is related to the psychological literature on transfer of learning, although practical ties between the two fields are limited"
+    "ground_truth": "This topic is related to the psychological literature on transfer of learning, although practical ties between the two fields are limited",
+    "source": "wikipedia:Transfer learning",
+    "relevant_sources": [
+      "wikipedia:Transfer learning"
+    ]
   },
   {
     "question": "What does the source say about: It has a context window size?",
-    "ground_truth": "It has a context window size of 2,048 tokens, and has demonstrated strong \"zero-shot\" and \"few-shot\" learning abilities on many tasks"
+    "ground_truth": "It has a context window size of 2,048 tokens, and has demonstrated strong \"zero-shot\" and \"few-shot\" learning abilities on many tasks",
+    "source": "wikipedia:GPT-3",
+    "relevant_sources": [
+      "wikipedia:GPT-3"
+    ]
   },
   {
     "question": "What does the source say about: At each layer, each token is?",
-    "ground_truth": "At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminished"
+    "ground_truth": "At each layer, each token is then contextualized within the scope of the context window with other (unmasked) tokens via a parallel multi-head attention mechanism, allowing the signal for key tokens to be amplified and less important tokens to be diminished",
+    "source": "wikipedia:Transformer (machine learning model)",
+    "relevant_sources": [
+      "wikipedia:Transformer (machine learning model)"
+    ]
   },
   {
     "question": "What does the source say about: NumPy (pronounced NUM-py) is a library?",
-    "ground_truth": "NumPy (pronounced  NUM-py) is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays"
+    "ground_truth": "NumPy (pronounced  NUM-py) is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays",
+    "source": "wikipedia:NumPy",
+    "relevant_sources": [
+      "wikipedia:NumPy"
+    ]
   },
   {
     "question": "What does the source say about: In machine learning and optimal control,?",
-    "ground_truth": "In machine learning and optimal control, reinforcement learning (RL) is concerned with how an intelligent agent should take actions in a dynamic environment in order to maximize a reward signal"
+    "ground_truth": "In machine learning and optimal control, reinforcement learning (RL) is concerned with how an intelligent agent should take actions in a dynamic environment in order to maximize a reward signal",
+    "source": "wikipedia:Reinforcement learning",
+    "relevant_sources": [
+      "wikipedia:Reinforcement learning"
+    ]
   },
   {
     "question": "What does the source say about: It was spun off from IPython?",
-    "ground_truth": "It was spun off from IPython in 2014 by its Seven Founding Members:  Fernando P\u00e9rez, Brian Granger, Damian Avila,  Kyle Kelley, Matthias Bussonnier, Min Ragan-Kelley, and Thomas Kluyver"
+    "ground_truth": "It was spun off from IPython in 2014 by its Seven Founding Members:  Fernando P\u00e9rez, Brian Granger, Damian Avila,  Kyle Kelley, Matthias Bussonnier, Min Ragan-Kelley, and Thomas Kluyver",
+    "source": "wikipedia:Jupyter",
+    "relevant_sources": [
+      "wikipedia:Jupyter"
+    ]
   },
   {
     "question": "What does the source say about: Precision is also known as positive?",
-    "ground_truth": "Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification"
+    "ground_truth": "Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification",
+    "source": "wikipedia:F1 score",
+    "relevant_sources": [
+      "wikipedia:F1 score"
+    ]
   },
   {
     "question": "What does the source say about: A neural network is a group?",
-    "ground_truth": "A neural network is a group of interconnected units called neurons that send signals to one another"
+    "ground_truth": "A neural network is a group of interconnected units called neurons that send signals to one another",
+    "source": "wikipedia:Neural network",
+    "relevant_sources": [
+      "wikipedia:Neural network"
+    ]
   },
   {
     "question": "What does the source say about: It is often used to control?",
-    "ground_truth": "It is often used to control source code by programmers who are developing software collaboratively"
+    "ground_truth": "It is often used to control source code by programmers who are developing software collaboratively",
+    "source": "wikipedia:Git",
+    "relevant_sources": [
+      "wikipedia:Git"
+    ]
   },
   {
     "question": "What does the source say about: DevOps is the integration and automation?",
-    "ground_truth": "DevOps is the integration and automation of software development and information technology operations"
+    "ground_truth": "DevOps is the integration and automation of software development and information technology operations",
+    "source": "wikipedia:DevOps",
+    "relevant_sources": [
+      "wikipedia:DevOps"
+    ]
   },
   {
     "question": "What does the source say about: Unlike \"hard\" weights, which are computed?",
-    "ground_truth": "Unlike \"hard\" weights, which are computed during the backwards training pass, \"soft\" weights exist only in the forward pass and therefore change with every step of the input"
+    "ground_truth": "Unlike \"hard\" weights, which are computed during the backwards training pass, \"soft\" weights exist only in the forward pass and therefore change with every step of the input",
+    "source": "wikipedia:Attention mechanism",
+    "relevant_sources": [
+      "wikipedia:Attention mechanism"
+    ]
   },
   {
     "question": "What does the source say about: Since this non-relational design does not?",
-    "ground_truth": "Since this non-relational design does not require a fixed schema, it scales easily to manage large, often unstructured datasets"
+    "ground_truth": "Since this non-relational design does not require a fixed schema, it scales easily to manage large, often unstructured datasets",
+    "source": "wikipedia:NoSQL",
+    "relevant_sources": [
+      "wikipedia:NoSQL"
+    ]
   },
   {
     "question": "What does the source say about: PyTorch allows for automatic parallelization of?",
-    "ground_truth": "PyTorch allows for automatic parallelization of training and, internally, implements CUDA bindings that speed training further by leveraging GPU resources"
+    "ground_truth": "PyTorch allows for automatic parallelization of training and, internally, implements CUDA bindings that speed training further by leveraging GPU resources",
+    "source": "wikipedia:PyTorch",
+    "relevant_sources": [
+      "wikipedia:PyTorch"
+    ]
   },
   {
     "question": "What does the source say about: Scikit-learn is a NumFOCUS fiscally sponsored?",
-    "ground_truth": "Scikit-learn is a NumFOCUS fiscally sponsored project"
+    "ground_truth": "Scikit-learn is a NumFOCUS fiscally sponsored project",
+    "source": "wikipedia:Scikit-learn",
+    "relevant_sources": [
+      "wikipedia:Scikit-learn"
+    ]
   },
   {
     "question": "What does the source say about: Because it holds all data in?",
-    "ground_truth": "Because it holds all data in memory and because of its design, Redis offers low-latency reads and writes, making it particularly suitable for use cases that require a cache"
+    "ground_truth": "Because it holds all data in memory and because of its design, Redis offers low-latency reads and writes, making it particularly suitable for use cases that require a cache",
+    "source": "wikipedia:Redis",
+    "relevant_sources": [
+      "wikipedia:Redis"
+    ]
   },
   {
     "question": "What does the source say about: The sum total of the database,?",
-    "ground_truth": "The sum total of the database, the DBMS and the associated applications can be referred to as a database system"
+    "ground_truth": "The sum total of the database, the DBMS and the associated applications can be referred to as a database system",
+    "source": "wikipedia:Database",
+    "relevant_sources": [
+      "wikipedia:Database"
+    ]
   },
   {
     "question": "What does the source say about: Backpropagation computes the gradient of a?",
-    "ground_truth": "Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input\u2013output example, and does so efficiently, computing the gradient one layer at a time, iterating backward from the last layer to avoid redundant calculations of intermediate terms in the chain rule; this can be derived through dynamic programming"
+    "ground_truth": "Backpropagation computes the gradient of a loss function with respect to the weights of the network for a single input\u2013output example, and does so efficiently, computing the gradient one layer at a time, iterating backward from the last layer to avoid redundant calculations of intermediate terms in the chain rule; this can be derived through dynamic programming",
+    "source": "wikipedia:Backpropagation",
+    "relevant_sources": [
+      "wikipedia:Backpropagation"
+    ]
   },
   {
     "question": "What does the source say about: The data are linearly transformed onto?",
-    "ground_truth": "The data are linearly transformed onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data can be easily identified"
+    "ground_truth": "The data are linearly transformed onto a new coordinate system such that the directions (principal components) capturing the largest variation in the data can be easily identified",
+    "source": "wikipedia:Principal component analysis",
+    "relevant_sources": [
+      "wikipedia:Principal component analysis"
+    ]
   },
   {
     "question": "What does the source say about: The ROC curve is the plot?",
-    "ground_truth": "The ROC curve is the plot of the true positive rate (TPR) against the false positive rate (FPR) at each threshold setting"
+    "ground_truth": "The ROC curve is the plot of the true positive rate (TPR) against the false positive rate (FPR) at each threshold setting",
+    "source": "wikipedia:ROC curve",
+    "relevant_sources": [
+      "wikipedia:ROC curve"
+    ]
   },
   {
     "question": "What does the source say about: Python is a high-level, general-purpose programming?",
-    "ground_truth": "Python is a high-level, general-purpose programming language"
+    "ground_truth": "Python is a high-level, general-purpose programming language",
+    "source": "wikipedia:Python (programming language)",
+    "relevant_sources": [
+      "wikipedia:Python (programming language)"
+    ]
   },
   {
     "question": "What does the source say about: The term API may refer either?",
-    "ground_truth": "The term API may refer either to the specification or to the implementation"
+    "ground_truth": "The term API may refer either to the specification or to the implementation",
+    "source": "wikipedia:Application programming interface",
+    "relevant_sources": [
+      "wikipedia:Application programming interface"
+    ]
   },
   {
     "question": "What does the source say about: As documented in their Manifesto for?",
-    "ground_truth": "As documented in their Manifesto for Agile Software Development, the practitioners value: \n\nIndividuals and interactions over processes and tools\nWorking software over comprehensive documentation\nCustomer collaboration over contract negotiation\nResponding to change over following a plan\nThe practitioners cite inspiration from new practices at the time including extreme programming, scrum, dynamic systems development method, adaptive software development, and being sympathetic to the need for an alternative to documentation-driven, heavyweight software development processes"
+    "ground_truth": "As documented in their Manifesto for Agile Software Development, the practitioners value: \n\nIndividuals and interactions over processes and tools\nWorking software over comprehensive documentation\nCustomer collaboration over contract negotiation\nResponding to change over following a plan\nThe practitioners cite inspiration from new practices at the time including extreme programming, scrum, dynamic systems development method, adaptive software development, and being sympathetic to the need for an alternative to documentation-driven, heavyweight software development processes",
+    "source": "wikipedia:Agile software development",
+    "relevant_sources": [
+      "wikipedia:Agile software development"
+    ]
   },
   {
     "question": "What does the source say about: History The name 'Keras' derives from?",
-    "ground_truth": "History\nThe name 'Keras' derives from the Ancient Greek word \u03ba\u03ad\u03c1\u03b1\u03c2 (Keras) meaning 'horn'"
+    "ground_truth": "History\nThe name 'Keras' derives from the Ancient Greek word \u03ba\u03ad\u03c1\u03b1\u03c2 (Keras) meaning 'horn'",
+    "source": "wikipedia:Keras",
+    "relevant_sources": [
+      "wikipedia:Keras"
+    ]
   },
   {
     "question": "What does the source say about: Developed at AT&T Bell Laboratories, SVMs?",
-    "ground_truth": "Developed at AT&T Bell Laboratories, SVMs are one of the most studied models, being based on statistical learning frameworks of VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974)"
+    "ground_truth": "Developed at AT&T Bell Laboratories, SVMs are one of the most studied models, being based on statistical learning frameworks of VC theory proposed by Vapnik (1982, 1995) and Chervonenkis (1974)",
+    "source": "wikipedia:Support vector machine",
+    "relevant_sources": [
+      "wikipedia:Support vector machine"
+    ]
   },
   {
     "question": "What does the source say about: It is particularly useful in handling?",
-    "ground_truth": "It is particularly useful in handling structured data, i"
+    "ground_truth": "It is particularly useful in handling structured data, i",
+    "source": "wikipedia:SQL",
+    "relevant_sources": [
+      "wikipedia:SQL"
+    ]
   },
   {
     "question": "What does the source say about: The application of ML to business?",
-    "ground_truth": "The application of ML to business problems is known as predictive analytics"
+    "ground_truth": "The application of ML to business problems is known as predictive analytics",
+    "source": "wikipedia:Machine learning",
+    "relevant_sources": [
+      "wikipedia:Machine learning"
+    ]
   },
   {
     "question": "What does the source say about: The name is derived from the?",
-    "ground_truth": "The name is derived from the term \"panel data\", an econometrics term for data sets that include observations over multiple time periods for the same individuals, as well as a play on the phrase \"Python data analysis\""
+    "ground_truth": "The name is derived from the term \"panel data\", an econometrics term for data sets that include observations over multiple time periods for the same individuals, as well as a play on the phrase \"Python data analysis\"",
+    "source": "wikipedia:Pandas (software)",
+    "relevant_sources": [
+      "wikipedia:Pandas (software)"
+    ]
   },
   {
     "question": "What does the source say about: Although regularization procedures can be divided?",
-    "ground_truth": "Although regularization procedures can be divided in many ways, the following delineation is particularly helpful:\n\nExplicit regularization is regularization whenever one explicitly adds a term to the optimization problem"
+    "ground_truth": "Although regularization procedures can be divided in many ways, the following delineation is particularly helpful:\n\nExplicit regularization is regularization whenever one explicitly adds a term to the optimization problem",
+    "source": "wikipedia:Regularization (mathematics)",
+    "relevant_sources": [
+      "wikipedia:Regularization (mathematics)"
+    ]
   },
   {
     "question": "What does the source say about: For example, for each neuron in?",
-    "ground_truth": "For example, for each neuron in the fully-connected layer, 10,000 weights would be required for processing an image sized 100 \u00d7 100 pixels"
+    "ground_truth": "For example, for each neuron in the fully-connected layer, 10,000 weights would be required for processing an image sized 100 \u00d7 100 pixels",
+    "source": "wikipedia:Convolutional neural network",
+    "relevant_sources": [
+      "wikipedia:Convolutional neural network"
+    ]
   },
   {
     "question": "What does the source say about: , the company promoting Docker software?",
-    "ground_truth": ", the company promoting Docker software\nDocker(s) may also refer to:\n\nPlaces\nDocker, Cumbria, a civil parish in England\nDocker, Lancashire, a hamlet in England\nDocker, Victoria, Australia\nDocker River or Kaltukatjara, a place in Northern Territory, Australia\n\nBrands and enterprises\nDockers (brand), a brand of men's clothing by Levi Strauss & Co"
+    "ground_truth": ", the company promoting Docker software\nDocker(s) may also refer to:\n\nPlaces\nDocker, Cumbria, a civil parish in England\nDocker, Lancashire, a hamlet in England\nDocker, Victoria, Australia\nDocker River or Kaltukatjara, a place in Northern Territory, Australia\n\nBrands and enterprises\nDockers (brand), a brand of men's clothing by Levi Strauss & Co",
+    "source": "wikipedia:Docker",
+    "relevant_sources": [
+      "wikipedia:Docker"
+    ]
   },
   {
     "question": "What does the source say about: The name Kubernetes comes from the?",
-    "ground_truth": "The name Kubernetes comes from the Ancient Greek term \u03ba\u03c5\u03b2\u03b5\u03c1\u03bd\u03ae\u03c4\u03b7\u03c2, kubern\u1e17t\u0113s (helmsman, pilot), which is also the origin of the words cybernetics and (through Latin) governor"
+    "ground_truth": "The name Kubernetes comes from the Ancient Greek term \u03ba\u03c5\u03b2\u03b5\u03c1\u03bd\u03ae\u03c4\u03b7\u03c2, kubern\u1e17t\u0113s (helmsman, pilot), which is also the origin of the words cybernetics and (through Latin) governor",
+    "source": "wikipedia:Kubernetes",
+    "relevant_sources": [
+      "wikipedia:Kubernetes"
+    ]
   },
   {
     "question": "What does the source say about: Natural language processing (NLP) is the?",
-    "ground_truth": "Natural language processing (NLP) is the processing of natural language information by a computer"
+    "ground_truth": "Natural language processing (NLP) is the processing of natural language information by a computer",
+    "source": "wikipedia:Natural language processing",
+    "relevant_sources": [
+      "wikipedia:Natural language processing"
+    ]
   },
   {
     "question": "What does the source say about: Its relative insensitivity to gap length?",
-    "ground_truth": "Its relative insensitivity to gap length is its advantage over other RNNs, hidden Markov models, and other sequence learning methods"
+    "ground_truth": "Its relative insensitivity to gap length is its advantage over other RNNs, hidden Markov models, and other sequence learning methods",
+    "source": "wikipedia:Long short-term memory",
+    "relevant_sources": [
+      "wikipedia:Long short-term memory"
+    ]
   },
   {
     "question": "What does the source say about: Gradient descent is a method for?",
-    "ground_truth": "Gradient descent is a method for unconstrained mathematical optimization"
+    "ground_truth": "Gradient descent is a method for unconstrained mathematical optimization",
+    "source": "wikipedia:Gradient descent",
+    "relevant_sources": [
+      "wikipedia:Gradient descent"
+    ]
   },
   {
     "question": "What does the source say about: It is one of the most?",
-    "ground_truth": "It is one of the most popular deep learning frameworks, alongside others such as PyTorch"
+    "ground_truth": "It is one of the most popular deep learning frameworks, alongside others such as PyTorch",
+    "source": "wikipedia:TensorFlow",
+    "relevant_sources": [
+      "wikipedia:TensorFlow"
+    ]
   },
   {
     "question": "What does the source say about: Thus, the encoder maps each point?",
-    "ground_truth": "Thus, the encoder maps each point (such as an image) from a large complex dataset into a distribution within the latent space, rather than to a single point in that space"
+    "ground_truth": "Thus, the encoder maps each point (such as an image) from a large complex dataset into a distribution within the latent space, rather than to a single point in that space",
+    "source": "wikipedia:Variational autoencoder",
+    "relevant_sources": [
+      "wikipedia:Variational autoencoder"
+    ]
   },
   {
     "question": "What does the source say about: The term is used specifically in?",
-    "ground_truth": "The term is used specifically in the problem of statistical classification"
+    "ground_truth": "The term is used specifically in the problem of statistical classification",
+    "source": "wikipedia:Confusion matrix",
+    "relevant_sources": [
+      "wikipedia:Confusion matrix"
+    ]
   },
   {
     "question": "What does the source say about: The ImageNet project is a large?",
-    "ground_truth": "The ImageNet project is a large visual database designed for use in visual object recognition software research"
+    "ground_truth": "The ImageNet project is a large visual database designed for use in visual object recognition software research",
+    "source": "wikipedia:ImageNet",
+    "relevant_sources": [
+      "wikipedia:ImageNet"
+    ]
   },
   {
     "question": "What does the source say about: Precision (also called positive predictive value)?",
-    "ground_truth": "Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances"
+    "ground_truth": "Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances",
+    "source": "wikipedia:Precision and recall",
+    "relevant_sources": [
+      "wikipedia:Precision and recall"
+    ]
   },
   {
     "question": "What does the source say about: History Shay Banon created the precursor?",
-    "ground_truth": "History\nShay Banon created the precursor to Elasticsearch, called Compass, in 2004"
+    "ground_truth": "History\nShay Banon created the precursor to Elasticsearch, called Compass, in 2004",
+    "source": "wikipedia:Elasticsearch",
+    "relevant_sources": [
+      "wikipedia:Elasticsearch"
+    ]
   },
   {
     "question": "What does the source say about: This image understanding can be seen?",
-    "ground_truth": "This image understanding can be seen as the disentangling of symbolic information from image data using models constructed with the aid of geometry, physics, statistics, and learning theory"
+    "ground_truth": "This image understanding can be seen as the disentangling of symbolic information from image data using models constructed with the aid of geometry, physics, statistics, and learning theory",
+    "source": "wikipedia:Computer vision",
+    "relevant_sources": [
+      "wikipedia:Computer vision"
+    ]
   },
   {
     "question": "What does the source say about: Unlike feedforward neural networks, which process?",
-    "ground_truth": "Unlike feedforward neural networks, which process inputs independently, RNNs utilize recurrent connections, where the output of a neuron at one time step is fed back as input to the network at the next time step"
+    "ground_truth": "Unlike feedforward neural networks, which process inputs independently, RNNs utilize recurrent connections, where the output of a neuron at one time step is fed back as input to the network at the next time step",
+    "source": "wikipedia:Recurrent neural network",
+    "relevant_sources": [
+      "wikipedia:Recurrent neural network"
+    ]
   },
   {
     "question": "What does the source say about: For instance, better Euclidean solutions can?",
-    "ground_truth": "For instance, better Euclidean solutions can be found using k-medians and k-medoids"
+    "ground_truth": "For instance, better Euclidean solutions can be found using k-medians and k-medoids",
+    "source": "wikipedia:K-means clustering",
+    "relevant_sources": [
+      "wikipedia:K-means clustering"
+    ]
   },
   {
     "question": "What does the source say about: The essence of overfitting is to?",
-    "ground_truth": "The essence of overfitting is to unknowingly extract some of the residual variation (i"
+    "ground_truth": "The essence of overfitting is to unknowingly extract some of the residual variation (i",
+    "source": "wikipedia:Overfitting",
+    "relevant_sources": [
+      "wikipedia:Overfitting"
+    ]
   },
   {
     "question": "What does the source say about: It can also be used to?",
-    "ground_truth": "It can also be used to assess the quality of a fitted model and the stability of its parameters"
+    "ground_truth": "It can also be used to assess the quality of a fitted model and the stability of its parameters",
+    "source": "wikipedia:Cross-validation (statistics)",
+    "relevant_sources": [
+      "wikipedia:Cross-validation (statistics)"
+    ]
   }
 ]

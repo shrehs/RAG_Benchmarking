@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, neural network architecture plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: Document 14 provides detailed analysis of?",
+    "ground_truth": "Document 14 provides detailed analysis of hyperparameter optimization"
+  },
+  {
+    "question": "What does the source say about: Document 3 provides detailed analysis of?",
+    "ground_truth": "Document 3 provides detailed analysis of model evaluation metrics"
+  },
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, hyperparameter optimization plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: Key concepts include optimization, performance metrics,?",
+    "ground_truth": "Key concepts include optimization, performance metrics, and scalability"
+  },
+  {
+    "question": "What does the source say about: Document 31 provides detailed analysis of?",
+    "ground_truth": "Document 31 provides detailed analysis of neural network architecture"
+  },
+  {
+    "question": "What does the source say about: Researchers have studied reinforcement learning agents?",
+    "ground_truth": "Researchers have studied reinforcement learning agents extensively"
+  },
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: Researchers have studied model evaluation metrics?",
+    "ground_truth": "Researchers have studied model evaluation metrics extensively"
+  },
+  {
+    "question": "What does the source say about: Key concepts include optimization, performance metrics,?",
+    "ground_truth": "Key concepts include optimization, performance metrics, and scalability"
+  },
+  {
+    "question": "What does the source say about: Researchers have studied transformer attention mechanism?",
+    "ground_truth": "Researchers have studied transformer attention mechanism extensively"
+  },
+  {
+    "question": "What does the source say about: Researchers have studied neural network architecture?",
+    "ground_truth": "Researchers have studied neural network architecture extensively"
+  },
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, transfer learning techniques plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, hyperparameter optimization plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: Researchers have studied hyperparameter optimization extensively?",
+    "ground_truth": "Researchers have studied hyperparameter optimization extensively"
+  },
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: This document discusses transformer attention mechanism?",
+    "ground_truth": "This document discusses transformer attention mechanism"
+  },
+  {
+    "question": "What does the source say about: Key concepts include optimization, performance metrics,?",
+    "ground_truth": "Key concepts include optimization, performance metrics, and scalability"
+  },
+  {
+    "question": "What does the source say about: In the field of artificial intelligence,?",
+    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role"
+  },
+  {
+    "question": "What does the source say about: Researchers have studied neural network architecture?",
+    "ground_truth": "Researchers have studied neural network architecture extensively"
+  }
+]

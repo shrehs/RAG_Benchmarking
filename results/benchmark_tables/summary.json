@@ -1,0 +1,507 @@
+[
+  {
+    "run_id": 1,
+    "date": "2026-03-17 17:25",
+    "architecture": "vector",
+    "dataset": "small",
+    "retrieval_metrics": {
+      "recall_at_5": 1.5,
+      "precision_at_5": 0.3,
+      "mrr": 0.72
+    },
+    "system_metrics": {
+      "p50_latency": 0.07455340004526079,
+      "p95_latency": 0.08952299994416535,
+      "mean_latency": 0.07672087999526411,
+      "throughput": 13.034261338787157,
+      "peak_ram_mb": 1636.01171875,
+      "storage_mb": 0.6872987747192383
+    },
+    "quality_metrics": {
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.5565201497577734,
+      "context_precision": 0.0,
+      "context_recall": 0.0
+    },
+    "cost": {
+      "embedding": 0.0,
+      "generation": 0.0035579999999999995,
+      "eval": 0.0,
+      "total": 0.0035579999999999995,
+      "per_query": 0.0001779
+    },
+    "notes": "k=5, arch=vector, dataset=small, docs=50",
+    "git_hash": "unknown",
+    "metadata": {
+      "machine": "LAPTOP-OA08EH86",
+      "python_version": "3.13.2",
+      "os": "Windows"
+    }
+  },
+  {
+    "run_id": 2,
+    "date": "2026-03-20 16:58",
+    "architecture": "hybrid",
+    "dataset": "small",
+    "retrieval_metrics": {
+      "recall_at_5": 1.8,
+      "precision_at_5": 0.36,
+      "mrr": 0.9166666666666666
+    },
+    "system_metrics": {
+      "p50_latency": 0.1884719999798108,
+      "p95_latency": 0.20534640000551008,
+      "mean_latency": 0.18497254000394606,
+      "throughput": 5.406207861873264,
+      "peak_ram_mb": 2422.90625,
+      "storage_mb": 1.021017074584961
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    },
+    "notes": "k=5, arch=hybrid, dataset=small, docs=50",
+    "git_hash": "unknown",
+    "metadata": {
+      "machine": "LAPTOP-OA08EH86",
+      "python_version": "3.13.2",
+      "os": "Windows"
+    }
+  },
+  {
+    "run_id": 3,
+    "date": "2026-03-20 16:58",
+    "architecture": "graph",
+    "dataset": "small",
+    "retrieval_metrics": {
+      "recall_at_5": 0.8,
+      "precision_at_5": 0.19,
+      "mrr": 0.45166666666666666
+    },
+    "system_metrics": {
+      "p50_latency": 0.009417499997653067,
+      "p95_latency": 0.009899600001517683,
+      "mean_latency": 0.007823739998275413,
+      "throughput": 127.816108436685,
+      "peak_ram_mb": 2492.07421875,
+      "storage_mb": 0.27715396881103516
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    },
+    "notes": "k=5, arch=graph, dataset=small, docs=50",
+    "git_hash": "unknown",
+    "metadata": {
+      "machine": "LAPTOP-OA08EH86",
+      "python_version": "3.13.2",
+      "os": "Windows"
+    }
+  },
+  {
+    "run_id": 4,
+    "date": "2026-03-20 17:03",
+    "architecture": "parent_child",
+    "dataset": "small",
+    "retrieval_metrics": {
+      "recall_at_5": 0.95,
+      "precision_at_5": 0.19,
+      "mrr": 0.71
+    },
+    "system_metrics": {
+      "p50_latency": 0.12000769999576733,
+      "p95_latency": 0.14353939998545684,
+      "mean_latency": 0.12336167999892496,
+      "throughput": 8.106244986358119,
+      "peak_ram_mb": 3663.3359375,
+      "storage_mb": 1.3072385787963867
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    },
+    "notes": "k=5, arch=parent_child, dataset=small, docs=50",
+    "git_hash": "unknown",
+    "metadata": {
+      "machine": "LAPTOP-OA08EH86",
+      "python_version": "3.13.2",
+      "os": "Windows"
+    }
+  },
+  {
+    "run_id": 5,
+    "date": "2026-03-20 17:07",
+    "architecture": "multi_query",
+    "dataset": "small",
+    "retrieval_metrics": {
+      "recall_at_5": 1.5,
+      "precision_at_5": 0.3,
+      "mrr": 0.7766666666666666
+    },
+    "system_metrics": {
+      "p50_latency": 0.6746653000009246,
+      "p95_latency": 0.7957953000150155,
+      "mean_latency": 0.6796618600026705,
+      "throughput": 1.4713198707311175,
+      "peak_ram_mb": 4865.75,
+      "storage_mb": 0.6872987747192383
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    },
+    "notes": "k=5, arch=multi_query, dataset=small, docs=50",
+    "git_hash": "unknown",
+    "metadata": {
+      "machine": "LAPTOP-OA08EH86",
+      "python_version": "3.13.2",
+      "os": "Windows"
+    }
+  },
+  {
+    "run_id": 6,
+    "architecture": "vector",
+    "dataset": "medium",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.11218260001624003,
+      "p95_latency": 0.13480780000099912,
+      "mean_latency": 0.11940426001092419,
+      "throughput": 8.374910576126101,
+      "peak_ram_mb": 2306.9140625,
+      "storage_mb": 2.783872604370117
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 7,
+    "architecture": "hybrid",
+    "dataset": "medium",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.1219660000060685,
+      "p95_latency": 0.140529800002696,
+      "mean_latency": 0.12465671999962069,
+      "throughput": 8.02203042084729,
+      "peak_ram_mb": 3504.1171875,
+      "storage_mb": 3.7536001205444336
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 8,
+    "architecture": "graph",
+    "dataset": "medium",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.01796300002024509,
+      "p95_latency": 0.02479920000769198,
+      "mean_latency": 0.0194198600074742,
+      "throughput": 51.49367707157137,
+      "peak_ram_mb": 3558.69921875,
+      "storage_mb": 0.8754549026489258
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 9,
+    "architecture": "parent_child",
+    "dataset": "medium",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.11676629999419674,
+      "p95_latency": 0.13095259998226538,
+      "mean_latency": 0.11906782000442036,
+      "throughput": 8.398574862316917,
+      "peak_ram_mb": 4849.0859375,
+      "storage_mb": 4.405713081359863
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 10,
+    "architecture": "multi_query",
+    "dataset": "medium",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.680475299974205,
+      "p95_latency": 0.7477471999882255,
+      "mean_latency": 0.6908479399920907,
+      "throughput": 1.447496535940237,
+      "peak_ram_mb": 5991.03125,
+      "storage_mb": 2.783872604370117
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 11,
+    "architecture": "vector",
+    "dataset": "large",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.11900480001349933,
+      "p95_latency": 0.1271575999853667,
+      "mean_latency": 0.11790818000445143,
+      "throughput": 8.481175775609858,
+      "peak_ram_mb": 7123.41796875,
+      "storage_mb": 0.5599040985107422
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 12,
+    "architecture": "hybrid",
+    "dataset": "large",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.11051890000817366,
+      "p95_latency": 0.12178649997804314,
+      "mean_latency": 0.11297915999311954,
+      "throughput": 8.851189901402172,
+      "peak_ram_mb": 8296.20703125,
+      "storage_mb": 0.6253204345703125
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 13,
+    "architecture": "graph",
+    "dataset": "large",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.006696199998259544,
+      "p95_latency": 0.007920200005173683,
+      "mean_latency": 0.007030739996116609,
+      "throughput": 142.23253890093284,
+      "peak_ram_mb": 8331.19921875,
+      "storage_mb": 0.16945362091064453
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 14,
+    "architecture": "parent_child",
+    "dataset": "large",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.11111339999479242,
+      "p95_latency": 0.12022529999376275,
+      "mean_latency": 0.11165059999912046,
+      "throughput": 8.956512549040289,
+      "peak_ram_mb": 9480.67578125,
+      "storage_mb": 1.1066484451293945
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  },
+  {
+    "run_id": 15,
+    "architecture": "multi_query",
+    "dataset": "large",
+    "retrieval_metrics": {
+      "recall_at_5": 0.0,
+      "precision_at_5": 0.0,
+      "mrr": 0.0
+    },
+    "system_metrics": {
+      "p50_latency": 0.7110519999987446,
+      "p95_latency": 0.7257495000085328,
+      "mean_latency": 0.696990820002975,
+      "throughput": 1.434739126113213,
+      "peak_ram_mb": 10634.41015625,
+      "storage_mb": 0.5599040985107422
+    },
+    "quality_metrics": {
+      "faithfulness": 0,
+      "answer_relevancy": 0,
+      "context_precision": 0,
+      "context_recall": 0
+    },
+    "cost": {
+      "embedding": 0,
+      "generation": 0,
+      "eval": 0,
+      "total": 0,
+      "per_query": 0
+    }
+  }
+]

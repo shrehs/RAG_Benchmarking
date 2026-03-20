@@ -1,0 +1,39 @@
+{
+  "run_id": 10,
+  "date": "2026-03-20 18:56",
+  "architecture": "multi_query",
+  "dataset": "medium",
+  "retrieval_metrics": {
+    "recall_at_5": 0.0,
+    "precision_at_5": 0.0,
+    "mrr": 0.0
+  },
+  "system_metrics": {
+    "p50_latency": 0.680475299974205,
+    "p95_latency": 0.7477471999882255,
+    "mean_latency": 0.6908479399920907,
+    "throughput": 1.447496535940237,
+    "peak_ram_mb": 5991.03125,
+    "storage_mb": 2.783872604370117
+  },
+  "quality_metrics": {
+    "faithfulness": 0,
+    "answer_relevancy": 0,
+    "context_precision": 0,
+    "context_recall": 0
+  },
+  "cost": {
+    "embedding": 0,
+    "generation": 0,
+    "eval": 0,
+    "total": 0,
+    "per_query": 0
+  },
+  "notes": "k=5, arch=multi_query, dataset=medium, docs=498",
+  "git_hash": "unknown",
+  "metadata": {
+    "machine": "LAPTOP-OA08EH86",
+    "python_version": "3.13.2",
+    "os": "Windows"
+  }
+}

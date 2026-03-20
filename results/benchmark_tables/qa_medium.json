@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What does the source say about: But few studies have considered whether?",
+    "ground_truth": "But few studies have considered whether speech characteristics are captured within individual dimensions of SSL features"
+  },
+  {
+    "question": "What does the source say about: To resolve path ambiguity, we select?",
+    "ground_truth": "To resolve path ambiguity, we select the kinetic-energy-minimizing Wasserstein-2 geodesic transporting a prior to the data distribution"
+  },
+  {
+    "question": "What does the source say about: 6 ms on iPhone 16 Pro,?",
+    "ground_truth": "6 ms on iPhone 16 Pro, enabling real-time assistive AI on handheld ultrasound devices"
+  },
+  {
+    "question": "What does the source say about: CLIP-driven Zero-shot Learning with Ambiguous Labels?",
+    "ground_truth": "CLIP-driven Zero-shot Learning with Ambiguous Labels\n\nZero-shot learning (ZSL) aims to recognize unseen classes by leveraging semantic information from seen classes, but most existing methods assume accurate class labels for training instances"
+  },
+  {
+    "question": "What does the source say about: We propose a contrastive pipeline that?",
+    "ground_truth": "We propose a contrastive pipeline that achieves a 20% Recall@1% when retrieving texts from spectra, proving that a meaningful alignment between these modalities is not only possible but capable of accelerating the interpretation of rare or poorly understood sources"
+  },
+  {
+    "question": "What does the source say about: In the non-parametric finite-sample regime, this?",
+    "ground_truth": "In the non-parametric finite-sample regime, this task is notoriously expensive, as the minimax sample complexity scales polynomially with the support size"
+  },
+  {
+    "question": "What does the source say about: Contrary to common intuition, our results?",
+    "ground_truth": "Contrary to common intuition, our results show that SAM-Audio preprocessing consistently degrades ASR performance, increasing both Word Error Rate (WER) and Character Error Rate (CER) compared to raw noisy speech, despite substantial improvements in signal-level quality"
+  },
+  {
+    "question": "What does the source say about: Third, many geometry-inspired methods are most?",
+    "ground_truth": "Third, many geometry-inspired methods are most natural for two-model interpolation and do not extend cleanly to merging N>2 experts with a principled objective"
+  },
+  {
+    "question": "What does the source say about: Conventional multi-frame approaches typically learn motion?",
+    "ground_truth": "Conventional multi-frame approaches typically learn motion implicitly through deep neural networks, often requiring additional motion supervision or explicit alignment modules"
+  },
+  {
+    "question": "What does the source say about: Specifically, SRasP leverages global semantic guidance?",
+    "ground_truth": "Specifically, SRasP leverages global semantic guidance to identify incoherent crops, followed by reorienting and aggregating the style gradients of these crops with the global style gradients within one image"
+  },
+  {
+    "question": "What does the source say about: We investigate various configurations of the?",
+    "ground_truth": "We investigate various configurations of the YOLOv11-architecture as well as extensions that incorporate multiple frames to improve detection accuracy"
+  },
+  {
+    "question": "What does the source say about: To address this, we introduce the?",
+    "ground_truth": "To address this, we introduce the Multi-view Oriented Observation (MOO) dataset, a large-scale synthetic AG-ReID dataset of $1,000$ cattle individuals captured from $128$ uniformly sampled viewpoints ($128,000$ annotated images)"
+  },
+  {
+    "question": "What does the source say about: Rethinking Role-Playing Evaluation: Anonymous Benchmarking and?",
+    "ground_truth": "Rethinking Role-Playing Evaluation: Anonymous Benchmarking and a Systematic Study of Personality Effects\n\nLarge language models (LLMs) have demonstrated significant potential in developing Role-Playing Agents (RPAs)"
+  },
+  {
+    "question": "What does the source say about: reducing model sizes and improving efficiency,?",
+    "ground_truth": "reducing model sizes and improving efficiency, many applications still require remote servers to provide the required resources"
+  },
+  {
+    "question": "What does the source say about: We introduce a multi-faceted evaluation rubric?",
+    "ground_truth": "We introduce a multi-faceted evaluation rubric that decomposes end-to-end shopping quality into structured dimensions and develop a calibrated LLM-as-judge pipeline aligned with human annotations"
+  },
+  {
+    "question": "What does the source say about: While LLMs offer strong semantic generalization,?",
+    "ground_truth": "While LLMs offer strong semantic generalization, deploying them in local-life services introduces three key challenges: lack of geographic grounding, exposure bias in preference optimization, and online inference latency"
+  },
+  {
+    "question": "What does the source say about: , the same activity is performed?",
+    "ground_truth": ", the same activity is performed differently by different individuals"
+  },
+  {
+    "question": "What does the source say about: We propose TopKGraphs, a method based?",
+    "ground_truth": "We propose TopKGraphs, a method based on start-node-anchored random walks that bias transitions toward nodes with structurally similar neighborhoods, measured via Jaccard similarity"
+  },
+  {
+    "question": "What does the source say about: Thus, there is widespread concern about?",
+    "ground_truth": "Thus, there is widespread concern about the potential for racial shortcut learning, where a model inadvertently learns to systematically bias its diagnostic predictions as a function of racial identity"
+  },
+  {
+    "question": "What does the source say about: Network compression techniques have therefore been?",
+    "ground_truth": "Network compression techniques have therefore been proposed to reduce model size and computational cost while maintaining predictive performance"
+  }
+]

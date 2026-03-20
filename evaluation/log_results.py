@@ -67,10 +67,10 @@ def format_result_block(run: dict) -> str:
 
 def append_result(result_path: Path) -> None:
     """Load a result JSON and append it to decisions_log.md"""
-    with open(result_path) as f:
+    with open(result_path, encoding="utf-8") as f:
         run = json.load(f)
 
-    log_text = DECISIONS_LOG.read_text()
+    log_text = DECISIONS_LOG.read_text(encoding="utf-8")
 
     start_idx = log_text.find(RESULTS_MARKER_START)
     end_idx = log_text.find(RESULTS_MARKER_END)
@@ -88,9 +88,9 @@ def append_result(result_path: Path) -> None:
         + log_text[end_idx:]
     )
 
-    DECISIONS_LOG.write_text(new_log)
+    DECISIONS_LOG.write_text(new_log, encoding="utf-8")
     run_id = run.get('run_id', '?')
-    print(f"[log_results] ✅ Appended RUN-{run_id:03d} to {DECISIONS_LOG}")
+    print(f"[log_results] [OK] Appended RUN-{run_id:03d} to {DECISIONS_LOG}")
 
 
 def save_result(
@@ -134,7 +134,7 @@ def save_result(
     }
 
     out_path = results_dir / f"run_{run_id:03d}_{architecture}_{dataset}.json"
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(run, f, indent=2)
 
     # Auto-append to decisions_log.md

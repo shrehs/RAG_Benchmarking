@@ -1,0 +1,57 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── FAISS indexes and chunk pickles ───────────────────────────────────────────
+# These can exceed GitHub's 100 MB file limit for medium/large datasets.
+# They are rebuilt automatically on first run (Colab GPU makes this fast).
+results/indexes/
+*.faiss
+*.index
+*.pkl
+
+# ── Raw and processed datasets ────────────────────────────────────────────────
+# Re-downloaded/processed on first run — no need to version large data files.
+datasets/raw/
+datasets/processed/
+
+# ── Benchmark result JSONs are intentionally NOT ignored ─────────────────────
+# results/benchmark_tables/*.json  ← committed so results persist across sessions
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── OS noise ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Temporary files & backups ─────────────────────────────────────────
+# Diagnostic reports and backups (temporary, regenerated each run)
+results/diagnostic_report.json
+results/benchmark_tables/*.backup.json
+
+# ── IDE ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Old/unused dashboards ─────────────────────────────────────────────
+# Using dashboard.html (standalone); JSX version not needed
+rag_benchmark_dashboard_v2.jsx
