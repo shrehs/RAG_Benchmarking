@@ -39,3 +39,19 @@ logs/
 # ── OS noise ──────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+
+# ── Temporary files & backups ─────────────────────────────────────────
+# Diagnostic reports and backups (temporary, regenerated each run)
+results/diagnostic_report.json
+results/benchmark_tables/*.backup.json
+
+# ── IDE ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Old/unused dashboards ─────────────────────────────────────────────
+# Using dashboard.html (standalone); JSX version not needed
+rag_benchmark_dashboard_v2.jsx
