@@ -199,16 +199,16 @@
     "architecture": "vector",
     "dataset": "medium",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.08,
+      "mrr": 0.3
     },
     "system_metrics": {
-      "p50_latency": 0.11218260001624003,
-      "p95_latency": 0.13480780000099912,
-      "mean_latency": 0.11940426001092419,
-      "throughput": 8.374910576126101,
-      "peak_ram_mb": 2306.9140625,
+      "p50_latency": 0.7889026000048034,
+      "p95_latency": 0.8434413999784738,
+      "mean_latency": 0.8003695800085552,
+      "throughput": 1.2494227978895838,
+      "peak_ram_mb": 1636.62890625,
       "storage_mb": 2.783872604370117
     },
     "quality_metrics": {
@@ -230,16 +230,16 @@
     "architecture": "hybrid",
     "dataset": "medium",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 1.25,
+      "precision_at_5": 0.25,
+      "mrr": 0.7141666666666666
     },
     "system_metrics": {
-      "p50_latency": 0.1219660000060685,
-      "p95_latency": 0.140529800002696,
-      "mean_latency": 0.12465671999962069,
-      "throughput": 8.02203042084729,
-      "peak_ram_mb": 3504.1171875,
+      "p50_latency": 0.7207431999850087,
+      "p95_latency": 0.8174550000112504,
+      "mean_latency": 0.7390976200113073,
+      "throughput": 1.3530012449298663,
+      "peak_ram_mb": 2818.2890625,
       "storage_mb": 3.7536001205444336
     },
     "quality_metrics": {
@@ -261,16 +261,16 @@
     "architecture": "graph",
     "dataset": "medium",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 1.2,
+      "precision_at_5": 0.24000000000000005,
+      "mrr": 0.8
     },
     "system_metrics": {
-      "p50_latency": 0.01796300002024509,
-      "p95_latency": 0.02479920000769198,
-      "mean_latency": 0.0194198600074742,
-      "throughput": 51.49367707157137,
-      "peak_ram_mb": 3558.69921875,
+      "p50_latency": 0.021083499945234507,
+      "p95_latency": 0.0232075999956578,
+      "mean_latency": 0.021532699989620596,
+      "throughput": 46.44099441695792,
+      "peak_ram_mb": 2870.36328125,
       "storage_mb": 0.8754549026489258
     },
     "quality_metrics": {
@@ -292,16 +292,16 @@
     "architecture": "parent_child",
     "dataset": "medium",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.4,
+      "precision_at_5": 0.08,
+      "mrr": 0.26666666666666666
     },
     "system_metrics": {
-      "p50_latency": 0.11676629999419674,
-      "p95_latency": 0.13095259998226538,
-      "mean_latency": 0.11906782000442036,
-      "throughput": 8.398574862316917,
-      "peak_ram_mb": 4849.0859375,
+      "p50_latency": 0.09395050001330674,
+      "p95_latency": 0.10162020003190264,
+      "mean_latency": 0.09197440000716597,
+      "throughput": 10.87259063306841,
+      "peak_ram_mb": 4015.51953125,
       "storage_mb": 4.405713081359863
     },
     "quality_metrics": {
@@ -323,16 +323,16 @@
     "architecture": "multi_query",
     "dataset": "medium",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.3,
+      "precision_at_5": 0.06000000000000001,
+      "mrr": 0.25
     },
     "system_metrics": {
-      "p50_latency": 0.680475299974205,
-      "p95_latency": 0.7477471999882255,
-      "mean_latency": 0.6908479399920907,
-      "throughput": 1.447496535940237,
-      "peak_ram_mb": 5991.03125,
+      "p50_latency": 2.027608800039161,
+      "p95_latency": 2.1222362999687903,
+      "mean_latency": 2.047961459995713,
+      "throughput": 0.48829043882597933,
+      "peak_ram_mb": 5182.25,
       "storage_mb": 2.783872604370117
     },
     "quality_metrics": {
@@ -354,16 +354,16 @@
     "architecture": "vector",
     "dataset": "large",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.25,
+      "precision_at_5": 0.05,
+      "mrr": 0.12916666666666668
     },
     "system_metrics": {
-      "p50_latency": 0.11900480001349933,
-      "p95_latency": 0.1271575999853667,
-      "mean_latency": 0.11790818000445143,
-      "throughput": 8.481175775609858,
-      "peak_ram_mb": 7123.41796875,
+      "p50_latency": 0.4265434999833815,
+      "p95_latency": 0.5085174000123516,
+      "mean_latency": 0.4453818399924785,
+      "throughput": 2.2452644230328023,
+      "peak_ram_mb": 6351.265625,
       "storage_mb": 0.5599040985107422
     },
     "quality_metrics": {
@@ -385,16 +385,16 @@
     "architecture": "hybrid",
     "dataset": "large",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.35,
+      "precision_at_5": 0.07,
+      "mrr": 0.22916666666666666
     },
     "system_metrics": {
-      "p50_latency": 0.11051890000817366,
-      "p95_latency": 0.12178649997804314,
-      "mean_latency": 0.11297915999311954,
-      "throughput": 8.851189901402172,
-      "peak_ram_mb": 8296.20703125,
+      "p50_latency": 0.32889250002335757,
+      "p95_latency": 0.570704800018575,
+      "mean_latency": 0.3090246600098908,
+      "throughput": 3.235987703919789,
+      "peak_ram_mb": 7520.0234375,
       "storage_mb": 0.6253204345703125
     },
     "quality_metrics": {
@@ -416,16 +416,16 @@
     "architecture": "graph",
     "dataset": "large",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.8,
+      "precision_at_5": 0.16,
+      "mrr": 0.67
     },
     "system_metrics": {
-      "p50_latency": 0.006696199998259544,
-      "p95_latency": 0.007920200005173683,
-      "mean_latency": 0.007030739996116609,
-      "throughput": 142.23253890093284,
-      "peak_ram_mb": 8331.19921875,
+      "p50_latency": 0.02320670004701242,
+      "p95_latency": 0.02560499997343868,
+      "mean_latency": 0.023325099993962796,
+      "throughput": 42.872270655166695,
+      "peak_ram_mb": 7556.7578125,
       "storage_mb": 0.16945362091064453
     },
     "quality_metrics": {
@@ -447,16 +447,16 @@
     "architecture": "parent_child",
     "dataset": "large",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.25,
+      "precision_at_5": 0.05,
+      "mrr": 0.1875
     },
     "system_metrics": {
-      "p50_latency": 0.11111339999479242,
-      "p95_latency": 0.12022529999376275,
-      "mean_latency": 0.11165059999912046,
-      "throughput": 8.956512549040289,
-      "peak_ram_mb": 9480.67578125,
+      "p50_latency": 0.3702103000250645,
+      "p95_latency": 0.5167645000037737,
+      "mean_latency": 0.3359043600154109,
+      "throughput": 2.977037868618678,
+      "peak_ram_mb": 8697.140625,
       "storage_mb": 1.1066484451293945
     },
     "quality_metrics": {
@@ -478,16 +478,16 @@
     "architecture": "multi_query",
     "dataset": "large",
     "retrieval_metrics": {
-      "recall_at_5": 0.0,
-      "precision_at_5": 0.0,
-      "mrr": 0.0
+      "recall_at_5": 0.25,
+      "precision_at_5": 0.05,
+      "mrr": 0.0725
     },
     "system_metrics": {
-      "p50_latency": 0.7110519999987446,
-      "p95_latency": 0.7257495000085328,
-      "mean_latency": 0.696990820002975,
-      "throughput": 1.434739126113213,
-      "peak_ram_mb": 10634.41015625,
+      "p50_latency": 1.726000299968291,
+      "p95_latency": 1.9314970000414178,
+      "mean_latency": 1.6591575199970976,
+      "throughput": 0.6027155275779658,
+      "peak_ram_mb": 9862.625,
       "storage_mb": 0.5599040985107422
     },
     "quality_metrics": {

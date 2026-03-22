@@ -1,82 +1,162 @@
 [
   {
     "question": "What does the source say about: But few studies have considered whether?",
-    "ground_truth": "But few studies have considered whether speech characteristics are captured within individual dimensions of SSL features"
+    "ground_truth": "But few studies have considered whether speech characteristics are captured within individual dimensions of SSL features",
+    "source": "arxiv:http://arxiv.org/abs/2603.03096v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.03096v1"
+    ]
   },
   {
     "question": "What does the source say about: To resolve path ambiguity, we select?",
-    "ground_truth": "To resolve path ambiguity, we select the kinetic-energy-minimizing Wasserstein-2 geodesic transporting a prior to the data distribution"
+    "ground_truth": "To resolve path ambiguity, we select the kinetic-energy-minimizing Wasserstein-2 geodesic transporting a prior to the data distribution",
+    "source": "arxiv:http://arxiv.org/abs/2603.05093v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05093v1"
+    ]
   },
   {
     "question": "What does the source say about: 6 ms on iPhone 16 Pro,?",
-    "ground_truth": "6 ms on iPhone 16 Pro, enabling real-time assistive AI on handheld ultrasound devices"
+    "ground_truth": "6 ms on iPhone 16 Pro, enabling real-time assistive AI on handheld ultrasound devices",
+    "source": "arxiv:http://arxiv.org/abs/2603.05421v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05421v1"
+    ]
   },
   {
     "question": "What does the source say about: CLIP-driven Zero-shot Learning with Ambiguous Labels?",
-    "ground_truth": "CLIP-driven Zero-shot Learning with Ambiguous Labels\n\nZero-shot learning (ZSL) aims to recognize unseen classes by leveraging semantic information from seen classes, but most existing methods assume accurate class labels for training instances"
+    "ground_truth": "CLIP-driven Zero-shot Learning with Ambiguous Labels\n\nZero-shot learning (ZSL) aims to recognize unseen classes by leveraging semantic information from seen classes, but most existing methods assume accurate class labels for training instances",
+    "source": "arxiv:http://arxiv.org/abs/2603.05053v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05053v1"
+    ]
   },
   {
     "question": "What does the source say about: We propose a contrastive pipeline that?",
-    "ground_truth": "We propose a contrastive pipeline that achieves a 20% Recall@1% when retrieving texts from spectra, proving that a meaningful alignment between these modalities is not only possible but capable of accelerating the interpretation of rare or poorly understood sources"
+    "ground_truth": "We propose a contrastive pipeline that achieves a 20% Recall@1% when retrieving texts from spectra, proving that a meaningful alignment between these modalities is not only possible but capable of accelerating the interpretation of rare or poorly understood sources",
+    "source": "arxiv:http://arxiv.org/abs/2603.04516v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04516v1"
+    ]
   },
   {
     "question": "What does the source say about: In the non-parametric finite-sample regime, this?",
-    "ground_truth": "In the non-parametric finite-sample regime, this task is notoriously expensive, as the minimax sample complexity scales polynomially with the support size"
+    "ground_truth": "In the non-parametric finite-sample regime, this task is notoriously expensive, as the minimax sample complexity scales polynomially with the support size",
+    "source": "arxiv:http://arxiv.org/abs/2603.04635v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04635v1"
+    ]
   },
   {
     "question": "What does the source say about: Contrary to common intuition, our results?",
-    "ground_truth": "Contrary to common intuition, our results show that SAM-Audio preprocessing consistently degrades ASR performance, increasing both Word Error Rate (WER) and Character Error Rate (CER) compared to raw noisy speech, despite substantial improvements in signal-level quality"
+    "ground_truth": "Contrary to common intuition, our results show that SAM-Audio preprocessing consistently degrades ASR performance, increasing both Word Error Rate (WER) and Character Error Rate (CER) compared to raw noisy speech, despite substantial improvements in signal-level quality",
+    "source": "arxiv:http://arxiv.org/abs/2603.04710v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04710v1"
+    ]
   },
   {
     "question": "What does the source say about: Third, many geometry-inspired methods are most?",
-    "ground_truth": "Third, many geometry-inspired methods are most natural for two-model interpolation and do not extend cleanly to merging N>2 experts with a principled objective"
+    "ground_truth": "Third, many geometry-inspired methods are most natural for two-model interpolation and do not extend cleanly to merging N>2 experts with a principled objective",
+    "source": "arxiv:http://arxiv.org/abs/2603.04972v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04972v1"
+    ]
   },
   {
     "question": "What does the source say about: Conventional multi-frame approaches typically learn motion?",
-    "ground_truth": "Conventional multi-frame approaches typically learn motion implicitly through deep neural networks, often requiring additional motion supervision or explicit alignment modules"
+    "ground_truth": "Conventional multi-frame approaches typically learn motion implicitly through deep neural networks, often requiring additional motion supervision or explicit alignment modules",
+    "source": "arxiv:http://arxiv.org/abs/2603.05071v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05071v1"
+    ]
   },
   {
     "question": "What does the source say about: Specifically, SRasP leverages global semantic guidance?",
-    "ground_truth": "Specifically, SRasP leverages global semantic guidance to identify incoherent crops, followed by reorienting and aggregating the style gradients of these crops with the global style gradients within one image"
+    "ground_truth": "Specifically, SRasP leverages global semantic guidance to identify incoherent crops, followed by reorienting and aggregating the style gradients of these crops with the global style gradients within one image",
+    "source": "arxiv:http://arxiv.org/abs/2603.05135v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05135v1"
+    ]
   },
   {
     "question": "What does the source say about: We investigate various configurations of the?",
-    "ground_truth": "We investigate various configurations of the YOLOv11-architecture as well as extensions that incorporate multiple frames to improve detection accuracy"
+    "ground_truth": "We investigate various configurations of the YOLOv11-architecture as well as extensions that incorporate multiple frames to improve detection accuracy",
+    "source": "arxiv:http://arxiv.org/abs/2603.05407v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05407v1"
+    ]
   },
   {
     "question": "What does the source say about: To address this, we introduce the?",
-    "ground_truth": "To address this, we introduce the Multi-view Oriented Observation (MOO) dataset, a large-scale synthetic AG-ReID dataset of $1,000$ cattle individuals captured from $128$ uniformly sampled viewpoints ($128,000$ annotated images)"
+    "ground_truth": "To address this, we introduce the Multi-view Oriented Observation (MOO) dataset, a large-scale synthetic AG-ReID dataset of $1,000$ cattle individuals captured from $128$ uniformly sampled viewpoints ($128,000$ annotated images)",
+    "source": "arxiv:http://arxiv.org/abs/2603.04314v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04314v1"
+    ]
   },
   {
     "question": "What does the source say about: Rethinking Role-Playing Evaluation: Anonymous Benchmarking and?",
-    "ground_truth": "Rethinking Role-Playing Evaluation: Anonymous Benchmarking and a Systematic Study of Personality Effects\n\nLarge language models (LLMs) have demonstrated significant potential in developing Role-Playing Agents (RPAs)"
+    "ground_truth": "Rethinking Role-Playing Evaluation: Anonymous Benchmarking and a Systematic Study of Personality Effects\n\nLarge language models (LLMs) have demonstrated significant potential in developing Role-Playing Agents (RPAs)",
+    "source": "arxiv:http://arxiv.org/abs/2603.03915v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.03915v1"
+    ]
   },
   {
     "question": "What does the source say about: reducing model sizes and improving efficiency,?",
-    "ground_truth": "reducing model sizes and improving efficiency, many applications still require remote servers to provide the required resources"
+    "ground_truth": "reducing model sizes and improving efficiency, many applications still require remote servers to provide the required resources",
+    "source": "arxiv:http://arxiv.org/abs/2603.05172v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05172v1"
+    ]
   },
   {
     "question": "What does the source say about: We introduce a multi-faceted evaluation rubric?",
-    "ground_truth": "We introduce a multi-faceted evaluation rubric that decomposes end-to-end shopping quality into structured dimensions and develop a calibrated LLM-as-judge pipeline aligned with human annotations"
+    "ground_truth": "We introduce a multi-faceted evaluation rubric that decomposes end-to-end shopping quality into structured dimensions and develop a calibrated LLM-as-judge pipeline aligned with human annotations",
+    "source": "arxiv:http://arxiv.org/abs/2603.03565v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.03565v1"
+    ]
   },
   {
     "question": "What does the source say about: While LLMs offer strong semantic generalization,?",
-    "ground_truth": "While LLMs offer strong semantic generalization, deploying them in local-life services introduces three key challenges: lack of geographic grounding, exposure bias in preference optimization, and online inference latency"
+    "ground_truth": "While LLMs offer strong semantic generalization, deploying them in local-life services introduces three key challenges: lack of geographic grounding, exposure bias in preference optimization, and online inference latency",
+    "source": "arxiv:http://arxiv.org/abs/2603.04946v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04946v1"
+    ]
   },
   {
     "question": "What does the source say about: , the same activity is performed?",
-    "ground_truth": ", the same activity is performed differently by different individuals"
+    "ground_truth": ", the same activity is performed differently by different individuals",
+    "source": "arxiv:http://arxiv.org/abs/2603.05371v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05371v1"
+    ]
   },
   {
     "question": "What does the source say about: We propose TopKGraphs, a method based?",
-    "ground_truth": "We propose TopKGraphs, a method based on start-node-anchored random walks that bias transitions toward nodes with structurally similar neighborhoods, measured via Jaccard similarity"
+    "ground_truth": "We propose TopKGraphs, a method based on start-node-anchored random walks that bias transitions toward nodes with structurally similar neighborhoods, measured via Jaccard similarity",
+    "source": "arxiv:http://arxiv.org/abs/2603.05375v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05375v1"
+    ]
   },
   {
     "question": "What does the source say about: Thus, there is widespread concern about?",
-    "ground_truth": "Thus, there is widespread concern about the potential for racial shortcut learning, where a model inadvertently learns to systematically bias its diagnostic predictions as a function of racial identity"
+    "ground_truth": "Thus, there is widespread concern about the potential for racial shortcut learning, where a model inadvertently learns to systematically bias its diagnostic predictions as a function of racial identity",
+    "source": "arxiv:http://arxiv.org/abs/2603.05157v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.05157v1"
+    ]
   },
   {
     "question": "What does the source say about: Network compression techniques have therefore been?",
-    "ground_truth": "Network compression techniques have therefore been proposed to reduce model size and computational cost while maintaining predictive performance"
+    "ground_truth": "Network compression techniques have therefore been proposed to reduce model size and computational cost while maintaining predictive performance",
+    "source": "arxiv:http://arxiv.org/abs/2603.04720v1",
+    "relevant_sources": [
+      "arxiv:http://arxiv.org/abs/2603.04720v1"
+    ]
   }
 ]

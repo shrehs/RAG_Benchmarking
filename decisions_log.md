@@ -713,6 +713,347 @@ Notes: <observations, anomalies, anything worth recording>
 **Notes**: k=5, arch=multi_query, dataset=large, docs=100
 
 ---
+
+### RUN-006
+- **Date**: 2026-03-22 20:22 UTC
+- **Architecture**: vector
+- **Dataset**: medium
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.4000 |
+| **Precision@5** | 0.0800 |
+| **MRR** | 0.3000 |
+| P50 Latency (s) | 0.782 |
+| P95 Latency (s) | 0.842 |
+| Throughput (q/s) | 1.2 |
+| Peak RAM (MB) | 1637 |
+| Storage (MB) | 3 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=vector, dataset=medium, docs=498
+
+---
+
+### RUN-007
+- **Date**: 2026-03-22 20:23 UTC
+- **Architecture**: hybrid
+- **Dataset**: medium
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 1.2500 |
+| **Precision@5** | 0.2500 |
+| **MRR** | 0.7142 |
+| P50 Latency (s) | 0.722 |
+| P95 Latency (s) | 1.015 |
+| Throughput (q/s) | 1.3 |
+| Peak RAM (MB) | 2818 |
+| Storage (MB) | 4 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=hybrid, dataset=medium, docs=498
+
+---
+
+### RUN-007
+- **Date**: 2026-03-22 20:23 UTC
+- **Architecture**: hybrid
+- **Dataset**: medium
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 1.2500 |
+| **Precision@5** | 0.2500 |
+| **MRR** | 0.7142 |
+| P50 Latency (s) | 0.721 |
+| P95 Latency (s) | 0.817 |
+| Throughput (q/s) | 1.4 |
+| Peak RAM (MB) | 2818 |
+| Storage (MB) | 4 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=hybrid, dataset=medium, docs=498
+
+---
+
+### RUN-008
+- **Date**: 2026-03-22 20:23 UTC
+- **Architecture**: graph
+- **Dataset**: medium
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 1.2000 |
+| **Precision@5** | 0.2400 |
+| **MRR** | 0.8000 |
+| P50 Latency (s) | 0.021 |
+| P95 Latency (s) | 0.023 |
+| Throughput (q/s) | 46.4 |
+| Peak RAM (MB) | 2870 |
+| Storage (MB) | 1 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=graph, dataset=medium, docs=498
+
+---
+
+### RUN-009
+- **Date**: 2026-03-22 20:23 UTC
+- **Architecture**: parent_child
+- **Dataset**: medium
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.4000 |
+| **Precision@5** | 0.0800 |
+| **MRR** | 0.2667 |
+| P50 Latency (s) | 0.094 |
+| P95 Latency (s) | 0.102 |
+| Throughput (q/s) | 10.9 |
+| Peak RAM (MB) | 4016 |
+| Storage (MB) | 4 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=parent_child, dataset=medium, docs=498
+
+---
+
+### RUN-010
+- **Date**: 2026-03-22 20:24 UTC
+- **Architecture**: multi_query
+- **Dataset**: medium
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.3000 |
+| **Precision@5** | 0.0600 |
+| **MRR** | 0.2500 |
+| P50 Latency (s) | 2.028 |
+| P95 Latency (s) | 2.122 |
+| Throughput (q/s) | 0.5 |
+| Peak RAM (MB) | 5182 |
+| Storage (MB) | 3 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=multi_query, dataset=medium, docs=498
+
+---
+
+### RUN-011
+- **Date**: 2026-03-22 20:24 UTC
+- **Architecture**: vector
+- **Dataset**: large
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.2500 |
+| **Precision@5** | 0.0500 |
+| **MRR** | 0.1292 |
+| P50 Latency (s) | 0.427 |
+| P95 Latency (s) | 0.509 |
+| Throughput (q/s) | 2.2 |
+| Peak RAM (MB) | 6351 |
+| Storage (MB) | 1 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=vector, dataset=large, docs=100
+
+---
+
+### RUN-012
+- **Date**: 2026-03-22 20:25 UTC
+- **Architecture**: hybrid
+- **Dataset**: large
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.3500 |
+| **Precision@5** | 0.0700 |
+| **MRR** | 0.2292 |
+| P50 Latency (s) | 0.329 |
+| P95 Latency (s) | 0.571 |
+| Throughput (q/s) | 3.2 |
+| Peak RAM (MB) | 7520 |
+| Storage (MB) | 1 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=hybrid, dataset=large, docs=100
+
+---
+
+### RUN-013
+- **Date**: 2026-03-22 20:25 UTC
+- **Architecture**: graph
+- **Dataset**: large
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.8000 |
+| **Precision@5** | 0.1600 |
+| **MRR** | 0.6700 |
+| P50 Latency (s) | 0.023 |
+| P95 Latency (s) | 0.026 |
+| Throughput (q/s) | 42.9 |
+| Peak RAM (MB) | 7557 |
+| Storage (MB) | 0 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=graph, dataset=large, docs=100
+
+---
+
+### RUN-014
+- **Date**: 2026-03-22 20:25 UTC
+- **Architecture**: parent_child
+- **Dataset**: large
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.2500 |
+| **Precision@5** | 0.0500 |
+| **MRR** | 0.1875 |
+| P50 Latency (s) | 0.370 |
+| P95 Latency (s) | 0.517 |
+| Throughput (q/s) | 3.0 |
+| Peak RAM (MB) | 8697 |
+| Storage (MB) | 1 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=parent_child, dataset=large, docs=100
+
+---
+
+### RUN-015
+- **Date**: 2026-03-22 20:26 UTC
+- **Architecture**: multi_query
+- **Dataset**: large
+- **Config**: `config.py @ git:unknown`
+- **Machine**: LAPTOP-OA08EH86 | Python 3.13.2
+
+| Metric | Value |
+|--------|-------|
+| **Recall@5** | 0.2500 |
+| **Precision@5** | 0.0500 |
+| **MRR** | 0.0725 |
+| P50 Latency (s) | 1.726 |
+| P95 Latency (s) | 1.931 |
+| Throughput (q/s) | 0.6 |
+| Peak RAM (MB) | 9863 |
+| Storage (MB) | 1 |
+| **Faithfulness** | 0.0000 |
+| **Answer Relevancy** | 0.0000 |
+| Context Precision | 0.0000 |
+| Context Recall | 0.0000 |
+| Embedding cost ($) | 0.000000 |
+| Generation cost ($) | 0.000000 |
+| Eval/judge cost ($) | 0.000000 |
+| **Total cost ($)** | 0.000000 |
+| **Per query ($)** | 0.000000 |
+
+**Notes**: k=5, arch=multi_query, dataset=large, docs=100
+
+---
 <!-- RESULTS_END -->
 
 ---

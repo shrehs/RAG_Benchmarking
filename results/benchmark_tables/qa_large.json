@@ -1,82 +1,162 @@
 [
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, neural network architecture plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, neural network architecture plays a crucial role",
+    "source": "kubernetes:stub_1",
+    "relevant_sources": [
+      "kubernetes:stub_1"
+    ]
   },
   {
     "question": "What does the source say about: Document 14 provides detailed analysis of?",
-    "ground_truth": "Document 14 provides detailed analysis of hyperparameter optimization"
+    "ground_truth": "Document 14 provides detailed analysis of hyperparameter optimization",
+    "source": "kubernetes:stub_14",
+    "relevant_sources": [
+      "kubernetes:stub_14"
+    ]
   },
   {
     "question": "What does the source say about: Document 3 provides detailed analysis of?",
-    "ground_truth": "Document 3 provides detailed analysis of model evaluation metrics"
+    "ground_truth": "Document 3 provides detailed analysis of model evaluation metrics",
+    "source": "kubernetes:stub_3",
+    "relevant_sources": [
+      "kubernetes:stub_3"
+    ]
   },
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, hyperparameter optimization plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, hyperparameter optimization plays a crucial role",
+    "source": "kubernetes:stub_4",
+    "relevant_sources": [
+      "kubernetes:stub_4"
+    ]
   },
   {
     "question": "What does the source say about: Key concepts include optimization, performance metrics,?",
-    "ground_truth": "Key concepts include optimization, performance metrics, and scalability"
+    "ground_truth": "Key concepts include optimization, performance metrics, and scalability",
+    "source": "kubernetes:stub_0",
+    "relevant_sources": [
+      "kubernetes:stub_0"
+    ]
   },
   {
     "question": "What does the source say about: Document 31 provides detailed analysis of?",
-    "ground_truth": "Document 31 provides detailed analysis of neural network architecture"
+    "ground_truth": "Document 31 provides detailed analysis of neural network architecture",
+    "source": "kubernetes:stub_31",
+    "relevant_sources": [
+      "kubernetes:stub_31"
+    ]
   },
   {
     "question": "What does the source say about: Researchers have studied reinforcement learning agents?",
-    "ground_truth": "Researchers have studied reinforcement learning agents extensively"
+    "ground_truth": "Researchers have studied reinforcement learning agents extensively",
+    "source": "kubernetes:stub_8",
+    "relevant_sources": [
+      "kubernetes:stub_8"
+    ]
   },
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role",
+    "source": "kubernetes:stub_7",
+    "relevant_sources": [
+      "kubernetes:stub_7"
+    ]
   },
   {
     "question": "What does the source say about: Researchers have studied model evaluation metrics?",
-    "ground_truth": "Researchers have studied model evaluation metrics extensively"
+    "ground_truth": "Researchers have studied model evaluation metrics extensively",
+    "source": "kubernetes:stub_3",
+    "relevant_sources": [
+      "kubernetes:stub_3"
+    ]
   },
   {
     "question": "What does the source say about: Key concepts include optimization, performance metrics,?",
-    "ground_truth": "Key concepts include optimization, performance metrics, and scalability"
+    "ground_truth": "Key concepts include optimization, performance metrics, and scalability",
+    "source": "kubernetes:stub_0",
+    "relevant_sources": [
+      "kubernetes:stub_0"
+    ]
   },
   {
     "question": "What does the source say about: Researchers have studied transformer attention mechanism?",
-    "ground_truth": "Researchers have studied transformer attention mechanism extensively"
+    "ground_truth": "Researchers have studied transformer attention mechanism extensively",
+    "source": "kubernetes:stub_9",
+    "relevant_sources": [
+      "kubernetes:stub_9"
+    ]
   },
   {
     "question": "What does the source say about: Researchers have studied neural network architecture?",
-    "ground_truth": "Researchers have studied neural network architecture extensively"
+    "ground_truth": "Researchers have studied neural network architecture extensively",
+    "source": "kubernetes:stub_1",
+    "relevant_sources": [
+      "kubernetes:stub_1"
+    ]
   },
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, transfer learning techniques plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, transfer learning techniques plays a crucial role",
+    "source": "kubernetes:stub_5",
+    "relevant_sources": [
+      "kubernetes:stub_5"
+    ]
   },
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, hyperparameter optimization plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, hyperparameter optimization plays a crucial role",
+    "source": "kubernetes:stub_4",
+    "relevant_sources": [
+      "kubernetes:stub_4"
+    ]
   },
   {
     "question": "What does the source say about: Researchers have studied hyperparameter optimization extensively?",
-    "ground_truth": "Researchers have studied hyperparameter optimization extensively"
+    "ground_truth": "Researchers have studied hyperparameter optimization extensively",
+    "source": "kubernetes:stub_4",
+    "relevant_sources": [
+      "kubernetes:stub_4"
+    ]
   },
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role",
+    "source": "kubernetes:stub_7",
+    "relevant_sources": [
+      "kubernetes:stub_7"
+    ]
   },
   {
     "question": "What does the source say about: This document discusses transformer attention mechanism?",
-    "ground_truth": "This document discusses transformer attention mechanism"
+    "ground_truth": "This document discusses transformer attention mechanism",
+    "source": "kubernetes:stub_9",
+    "relevant_sources": [
+      "kubernetes:stub_9"
+    ]
   },
   {
     "question": "What does the source say about: Key concepts include optimization, performance metrics,?",
-    "ground_truth": "Key concepts include optimization, performance metrics, and scalability"
+    "ground_truth": "Key concepts include optimization, performance metrics, and scalability",
+    "source": "kubernetes:stub_0",
+    "relevant_sources": [
+      "kubernetes:stub_0"
+    ]
   },
   {
     "question": "What does the source say about: In the field of artificial intelligence,?",
-    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role"
+    "ground_truth": "In the field of artificial intelligence, computer vision tasks plays a crucial role",
+    "source": "kubernetes:stub_7",
+    "relevant_sources": [
+      "kubernetes:stub_7"
+    ]
   },
   {
     "question": "What does the source say about: Researchers have studied neural network architecture?",
-    "ground_truth": "Researchers have studied neural network architecture extensively"
+    "ground_truth": "Researchers have studied neural network architecture extensively",
+    "source": "kubernetes:stub_1",
+    "relevant_sources": [
+      "kubernetes:stub_1"
+    ]
   }
 ]

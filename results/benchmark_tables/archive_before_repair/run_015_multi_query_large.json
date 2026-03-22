@@ -1,20 +1,20 @@
 {
-  "run_id": 12,
-  "date": "2026-03-22 20:25",
-  "architecture": "hybrid",
+  "run_id": 15,
+  "date": "2026-03-20 19:03",
+  "architecture": "multi_query",
   "dataset": "large",
   "retrieval_metrics": {
-    "recall_at_5": 0.35,
-    "precision_at_5": 0.07,
-    "mrr": 0.22916666666666666
+    "recall_at_5": 0.0,
+    "precision_at_5": 0.0,
+    "mrr": 0.0
   },
   "system_metrics": {
-    "p50_latency": 0.32889250002335757,
-    "p95_latency": 0.570704800018575,
-    "mean_latency": 0.3090246600098908,
-    "throughput": 3.235987703919789,
-    "peak_ram_mb": 7520.0234375,
-    "storage_mb": 0.6253204345703125
+    "p50_latency": 0.7110519999987446,
+    "p95_latency": 0.7257495000085328,
+    "mean_latency": 0.696990820002975,
+    "throughput": 1.434739126113213,
+    "peak_ram_mb": 10634.41015625,
+    "storage_mb": 0.5599040985107422
   },
   "quality_metrics": {
     "faithfulness": 0,
@@ -29,7 +29,7 @@
     "total": 0,
     "per_query": 0
   },
-  "notes": "k=5, arch=hybrid, dataset=large, docs=100",
+  "notes": "k=5, arch=multi_query, dataset=large, docs=100",
   "git_hash": "unknown",
   "metadata": {
     "machine": "LAPTOP-OA08EH86",

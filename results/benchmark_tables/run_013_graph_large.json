@@ -1,19 +1,19 @@
 {
   "run_id": 13,
-  "date": "2026-03-20 18:59",
+  "date": "2026-03-22 20:25",
   "architecture": "graph",
   "dataset": "large",
   "retrieval_metrics": {
-    "recall_at_5": 0.0,
-    "precision_at_5": 0.0,
-    "mrr": 0.0
+    "recall_at_5": 0.8,
+    "precision_at_5": 0.16,
+    "mrr": 0.67
   },
   "system_metrics": {
-    "p50_latency": 0.006696199998259544,
-    "p95_latency": 0.007920200005173683,
-    "mean_latency": 0.007030739996116609,
-    "throughput": 142.23253890093284,
-    "peak_ram_mb": 8331.19921875,
+    "p50_latency": 0.02320670004701242,
+    "p95_latency": 0.02560499997343868,
+    "mean_latency": 0.023325099993962796,
+    "throughput": 42.872270655166695,
+    "peak_ram_mb": 7556.7578125,
     "storage_mb": 0.16945362091064453
   },
   "quality_metrics": {
